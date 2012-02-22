@@ -10,6 +10,7 @@
   float: left;
   margin: 0 0 @baseLineHeight @gridGutterWidth;
 }
+/*
 .thumbnail {
   display: block;
   padding: 4px;
@@ -18,6 +19,7 @@
   .border-radius(4px);
   .box-shadow(0 1px 1px rgba(0,0,0,.075));
 }
+*/
 // Add a hover state for linked versions only
 a.thumbnail:hover {
   border-color: @linkColor;
@@ -32,4 +34,13 @@ a.thumbnail:hover {
 }
 .thumbnail .caption {
   padding: 9px;
+}
+
+.thumbnail {
+  padding: 6px;
+  background: #fff;
+  display: block;
+  line-height: 1;
+  border: 1px solid #ccc;
+  .box-shadow(0 1px 1px rgba(0,0,0,.075));
 }
