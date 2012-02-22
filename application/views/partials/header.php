@@ -52,7 +52,7 @@
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">LEARN <b class="caret"></b></a>
 										<ul class="dropdown-menu">
 											<li><a href="<?php echo URL::to('docs'); ?>">DOCUMENTATION</a></li>
-											<li><a href="#">SCREENCASTS</a></li>
+											<li><a href="http://screenr.com/user/laravel">SCREENCASTS</a></li>
 											<li class="divider"></li>
 											<li><a href="http://laravel.com/api">DEVELOPER API</a></li>
 										</ul>
