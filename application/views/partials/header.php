@@ -34,7 +34,7 @@
 		</script>
 	</head>
 
-	<body>
+	<body<?php if (isset($body_class)) echo ' class="'.$body_class.'"'; ?>>
 		<header>
 			<div class="container">
 				<div class="navbar">

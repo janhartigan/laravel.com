@@ -2775,7 +2775,8 @@ a.thumbnail:hover {
   z-index: 5;
   margin-top: -15px;
   background-color: #e9edee;
-  min-height: 212px;
+  min-height: 228px;
+  height: 228px;
   position: relative;
   font-family: "droid-serif", serif;
   text-align: center;
@@ -2792,11 +2793,12 @@ a.thumbnail:hover {
   height: 27px;
 }
 .hero-unit h1 {
-  padding: 25px 10px;
+  padding: 60px 10px 25px;
   text-transform: none;
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 36px;
+  line-height: 24px;
   font-family: "droid-serif", serif;
+  font-weight: normal;
   margin: 0;
 }
 .hero-unit h1 span {
@@ -2835,8 +2837,11 @@ a.yellow {
   color: #fbcc62;
   text-transform: uppercase;
 }
-header {
+.home header {
   background: transparent url(../img/bg-head.png) repeat-x top left;
+}
+header {
+  background: #2f3030 url(../img/bg-head.png) repeat-x top left;
   height: 88px;
   position: relative;
   padding: 0;
@@ -2891,6 +2896,9 @@ header a:hover {
   color: #fb503b;
   text-decoration: none;
 }
+header .dropdown-menu li {
+  margin-bottom: 0;
+}
 .midcontent {
   padding: 50px 0;
   background: #2f3030 url(../img/bg-down.png) no-repeat center top;
@@ -2935,16 +2943,22 @@ header a:hover {
   background: url(../img/icons/bundle.png) no-repeat 5px top;
 }
 .midcontent .boxes .testimonials {
-  background: url(../img/icons/testimonial.png) no-repeat 5px top;
+  background: url(../img/icons/testimonial.png) no-repeat 5px 36px;
+  border-top: 1px dashed #6A6A6A;
+  margin-top: 12px;
+  padding-top: 36px;
 }
 .midcontent .boxes .github {
-  background: url(../img/icons/github.png) no-repeat 5px top;
+  background: url(../img/icons/github.png) no-repeat 5px 36px;
   position: relative;
+  border-top: 1px dashed #6A6A6A;
+  margin-top: 12px;
+  padding-top: 36px;
 }
 .midcontent .boxes .github h3:before {
   content: "";
   position: absolute;
-  top: -20px;
+  top: 16px;
   right: 80px;
   background: url(../img/icons/seewhatwedid.png) no-repeat;
   width: 162px;
@@ -2962,8 +2976,12 @@ header a:hover {
 .midcontent .boxes .unit-test {
   background: url(../img/v3/unit-test.png) no-repeat 5px top;
 }
+.mid-content {
+  background: #2F3030;
+  padding-bottom: 90px;
+}
 .main {
-  margin-top: 40px;
+  padding-top: 40px;
 }
 .content.docs {
   position: relative;
@@ -3173,6 +3191,9 @@ i.twitter {
 .sidebar ul {
   margin-left: 0;
   list-style: none;
+}
+.sidebar ul li.active a {
+  color: #FB503B;
 }
 .sidebar ul li {
   border-top: 1px dashed #6a6a6a;

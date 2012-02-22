@@ -21,8 +21,11 @@ a.yellow {
 	text-transform: uppercase;
 }
 
-header {
+.home header {
 	background: transparent url(../img/bg-head.png) repeat-x top left;
+}
+header {
+	background: #2F3030 url(../img/bg-head.png) repeat-x top left;
 	height: 88px;
 	position:relative;
 	padding: 0;
@@ -77,6 +80,9 @@ header {
 		color: #fb503b;
 		text-decoration: none;
 	}
+	.dropdown-menu li {
+		margin-bottom: 0;
+	}
 }
 
 // Home Page Content
@@ -114,9 +120,7 @@ header {
 		font-family: @baseFontFamily;
 		font-size: @baseFontSize;
 		line-height: @baseLineHeight;
-
 		position: relative;
-
 		.span6 {
 			div {
 				padding-left: 65px;
@@ -130,15 +134,21 @@ header {
 			background: url(../img/icons/bundle.png) no-repeat 5px top;
 		}
 		.testimonials {
-			background: url(../img/icons/testimonial.png) no-repeat 5px top;
+			background: url(../img/icons/testimonial.png) no-repeat 5px 36px;
+			border-top: 1px dashed #6A6A6A;
+			margin-top: 12px;
+			padding-top: 36px;
 		}
 		.github {
-			background: url(../img/icons/github.png) no-repeat 5px top;
+			background: url(../img/icons/github.png) no-repeat 5px 36px;
 			position: relative;
+			border-top: 1px dashed #6A6A6A;
+			margin-top: 12px;
+			padding-top: 36px;
 			h3:before{
 				content:"";
 				position: absolute;
-				top: -20px;
+				top: 16px;
 				right: 80px;
 				background: url(../img/icons/seewhatwedid.png) no-repeat;
 				width: 162px;
@@ -162,8 +172,12 @@ header {
 
 // Main Content
 // ------------
+.mid-content {
+	background: #2F3030;
+	padding-bottom: 90px;
+}
 .main {
-	margin-top: 40px;
+	padding-top: 40px;
 }
 .content.docs {
 	position: relative;

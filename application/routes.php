@@ -44,7 +44,7 @@ Route::get('/, home', function()
 
 	return View::make('home.index')
 		->with('quote', $quote)
-		->nest('header', 'partials.header', array('title' => 'Laravel - A Clean &amp; Classy PHP Framework'))
+		->nest('header', 'partials.header', array('title' => 'Laravel - A Clean &amp; Classy PHP Framework', 'body_class' => 'home'))
 		->nest('footer', 'partials.footer');
 });
 
@@ -59,7 +59,7 @@ Route::get('(3)', function()
 {
 	return View::make('pages.three')
 		->with('quote', $quote)
-		->nest('header', 'partials.header', array('title' => 'Laravel 3. Elegance Has Arrived.'))
+		->nest('header', 'partials.header', array('title' => 'Laravel 3. Elegance Has Arrived.', 'body_class' => 'home'))
 		->nest('footer', 'partials.footer');
 });
 
