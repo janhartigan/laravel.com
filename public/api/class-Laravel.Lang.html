@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Lang</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3949239230" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Asset.html">Asset</a></li>
+				<li><a href="class-Laravel.Asset_Container.html">Asset_Container</a></li>
+				<li><a href="class-Laravel.Auth.html">Auth</a></li>
+				<li><a href="class-Laravel.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-Laravel.Blade.html">Blade</a></li>
+				<li><a href="class-Laravel.Bundle.html">Bundle</a></li>
+				<li><a href="class-Laravel.Cache.html">Cache</a></li>
+				<li><a href="class-Laravel.Config.html">Config</a></li>
+				<li><a href="class-Laravel.Cookie.html">Cookie</a></li>
+				<li><a href="class-Laravel.Crypter.html">Crypter</a></li>
+				<li><a href="class-Laravel.Database.html">Database</a></li>
+				<li><a href="class-Laravel.Error.html">Error</a></li>
+				<li><a href="class-Laravel.Event.html">Event</a></li>
+				<li><a href="class-Laravel.File.html">File</a></li>
+				<li><a href="class-Laravel.Fluent.html">Fluent</a></li>
+				<li><a href="class-Laravel.Form.html">Form</a></li>
+				<li><a href="class-Laravel.Hash.html">Hash</a></li>
+				<li><a href="class-Laravel.HTML.html">HTML</a></li>
+				<li><a href="class-Laravel.Input.html">Input</a></li>
+				<li><a href="class-Laravel.IoC.html">IoC</a></li>
+				<li class="active"><a href="class-Laravel.Lang.html">Lang</a></li>
+				<li><a href="class-Laravel.Log.html">Log</a></li>
+				<li><a href="class-Laravel.Memcached.html">Memcached</a></li>
+				<li><a href="class-Laravel.Messages.html">Messages</a></li>
+				<li><a href="class-Laravel.Paginator.html">Paginator</a></li>
+				<li><a href="class-Laravel.Redirect.html">Redirect</a></li>
+				<li><a href="class-Laravel.Redis.html">Redis</a></li>
+				<li><a href="class-Laravel.Request.html">Request</a></li>
+				<li><a href="class-Laravel.Response.html">Response</a></li>
+				<li><a href="class-Laravel.Section.html">Section</a></li>
+				<li><a href="class-Laravel.Session.html">Session</a></li>
+				<li><a href="class-Laravel.Str.html">Str</a></li>
+				<li><a href="class-Laravel.URI.html">URI</a></li>
+				<li><a href="class-Laravel.URL.html">URL</a></li>
+				<li><a href="class-Laravel.Validator.html">Validator</a></li>
+				<li><a href="class-Laravel.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.html" title="Summary of Laravel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Lang</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Lang.html#3" title="Go to source code">lang.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Laravel.Lang.html#35" title="Go to source code">__construct</a>( <span>string <var>$key</var></span>, <span>array <var>$replacements</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$language</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new Lang instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new Lang instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$language</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="line" id="_line">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Lang.html">Laravel\Lang</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_line">#</a>
+		<code><a href="source-class-Laravel.Lang.html#50" title="Go to source code">line</a>( <span>string <var>$key</var></span>, <span>array <var>$replacements</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$language</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new language line instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new language line instance.</p>
+
+<pre>
+<span
+class="php-comment">// Create a new language line instance for a given line</span>
+<span
+class="php-var">$line</span> = Lang::line(<span
+class="php-quote">'validation.required'</span>);
+
+<span
+class="php-comment">// Create a new language line for a line belonging to a bundle</span>
+<span
+class="php-var">$line</span> = Lang::line(<span
+class="php-quote">'admin::messages.welcome'</span>);
+
+<span
+class="php-comment">// Specify some replacements for the language line</span>
+<span
+class="php-var">$line</span> = Lang::line(<span
+class="php-quote">'validation.required'</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-quote">'attribute'</span> =&gt; <span
+class="php-quote">'email'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$replacements</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$language</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Lang.html">Laravel\Lang</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="has" id="_has">
+
+		<td class="attributes"><code>
+			
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_has">#</a>
+		<code><a href="source-class-Laravel.Lang.html#76" title="Go to source code">has</a>( <span>string <var>$key</var></span>, <span>string <var>$language</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Determine if a language line exists.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine if a language line exists.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$language</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Laravel.Lang.html#88" title="Go to source code">get</a>( <span>string <var>$language</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the language line as a string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the language line as a string.</p>
+
+<pre>
+<span class="php-comment">// Get a language line</span>
+<span
+class="php-var">$line</span> = Lang::line(<span
+class="php-quote">'validation.required'</span>)-&gt;get();
+
+<span
+class="php-comment">// Get a language line in a specified language</span>
+<span
+class="php-var">$line</span> = Lang::line(<span
+class="php-quote">'validation.required'</span>)-&gt;get(<span
+class="php-quote">'sp'</span>);
+
+<span
+class="php-comment">// Return a default value if the line doesn't exist</span>
+<span
+class="php-var">$line</span> = Lang::line(<span
+class="php-quote">'validation.required'</span>, <span
+class="php-keyword1">null</span>, <span
+class="php-quote">'Default'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$language</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$default</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parse" id="_parse">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parse">#</a>
+		<code><a href="source-class-Laravel.Lang.html#138" title="Go to source code">parse</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse a language key into its bundle, file, and line segments.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse a language key into its bundle, file, and line segments.</p>
+
+<p>Language lines follow a {bundle}::{file}.{line} naming convention.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="load" id="_load">
+
+		<td class="attributes"><code>
+			
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_load">#</a>
+		<code><a href="source-class-Laravel.Lang.html#167" title="Go to source code">load</a>( <span>string <var>$bundle</var></span>, <span>string <var>$language</var></span>, <span>string <var>$file</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Load all of the language lines from a language file.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Load all of the language lines from a language file.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bundle</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$language</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$file</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="path" id="_path">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_path">#</a>
+		<code><a href="source-class-Laravel.Lang.html#202" title="Go to source code">path</a>( <span>string <var>$bundle</var></span>, <span>string <var>$language</var></span>, <span>string <var>$file</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the path to a bundle's language file.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the path to a bundle's language file.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bundle</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$language</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$file</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-Laravel.Lang.html#215" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the string content of the language line.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the string content of the language line.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="key" id="$key">
+
+		<td class="attributes"><code>
+			
+			protected 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Lang.html#5" title="Go to source code"><var>$key</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$key" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The key of the language line being retrieved.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The key of the language line being retrieved.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="replacements" id="$replacements">
+
+		<td class="attributes"><code>
+			
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Lang.html#12" title="Go to source code"><var>$replacements</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$replacements" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The replacements that should be made on the language line.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The replacements that should be made on the language line.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="language" id="$language">
+
+		<td class="attributes"><code>
+			
+			protected 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Lang.html#19" title="Go to source code"><var>$language</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$language" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The language in which the line should be retrieved.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The language in which the line should be retrieved.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="lines" id="$lines">
+
+		<td class="attributes"><code>
+			
+			protected static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Lang.html#26" title="Go to source code"><var>$lines</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$lines" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All of the loaded language lines.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All of the loaded language lines.</p>
+
+<p>The array is keyed by [$bundle][$language][$file].</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

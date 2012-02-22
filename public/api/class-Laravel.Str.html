@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Str</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3949239230" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Asset.html">Asset</a></li>
+				<li><a href="class-Laravel.Asset_Container.html">Asset_Container</a></li>
+				<li><a href="class-Laravel.Auth.html">Auth</a></li>
+				<li><a href="class-Laravel.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-Laravel.Blade.html">Blade</a></li>
+				<li><a href="class-Laravel.Bundle.html">Bundle</a></li>
+				<li><a href="class-Laravel.Cache.html">Cache</a></li>
+				<li><a href="class-Laravel.Config.html">Config</a></li>
+				<li><a href="class-Laravel.Cookie.html">Cookie</a></li>
+				<li><a href="class-Laravel.Crypter.html">Crypter</a></li>
+				<li><a href="class-Laravel.Database.html">Database</a></li>
+				<li><a href="class-Laravel.Error.html">Error</a></li>
+				<li><a href="class-Laravel.Event.html">Event</a></li>
+				<li><a href="class-Laravel.File.html">File</a></li>
+				<li><a href="class-Laravel.Fluent.html">Fluent</a></li>
+				<li><a href="class-Laravel.Form.html">Form</a></li>
+				<li><a href="class-Laravel.Hash.html">Hash</a></li>
+				<li><a href="class-Laravel.HTML.html">HTML</a></li>
+				<li><a href="class-Laravel.Input.html">Input</a></li>
+				<li><a href="class-Laravel.IoC.html">IoC</a></li>
+				<li><a href="class-Laravel.Lang.html">Lang</a></li>
+				<li><a href="class-Laravel.Log.html">Log</a></li>
+				<li><a href="class-Laravel.Memcached.html">Memcached</a></li>
+				<li><a href="class-Laravel.Messages.html">Messages</a></li>
+				<li><a href="class-Laravel.Paginator.html">Paginator</a></li>
+				<li><a href="class-Laravel.Redirect.html">Redirect</a></li>
+				<li><a href="class-Laravel.Redis.html">Redis</a></li>
+				<li><a href="class-Laravel.Request.html">Request</a></li>
+				<li><a href="class-Laravel.Response.html">Response</a></li>
+				<li><a href="class-Laravel.Section.html">Section</a></li>
+				<li><a href="class-Laravel.Session.html">Session</a></li>
+				<li class="active"><a href="class-Laravel.Str.html">Str</a></li>
+				<li><a href="class-Laravel.URI.html">URI</a></li>
+				<li><a href="class-Laravel.URL.html">URL</a></li>
+				<li><a href="class-Laravel.Validator.html">Validator</a></li>
+				<li><a href="class-Laravel.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.html" title="Summary of Laravel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Str</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Str.html#3" title="Go to source code">str.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="encoding" id="_encoding">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encoding">#</a>
+		<code><a href="source-class-Laravel.Str.html#5" title="Go to source code">encoding</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the default string encoding for the application.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the default string encoding for the application.</p>
+
+<p>This method is simply a short-cut to Config::get('application.encoding').</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="length" id="_length">
+
+		<td class="attributes"><code>
+			
+			 public static
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_length">#</a>
+		<code><a href="source-class-Laravel.Str.html#17" title="Go to source code">length</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the length of a string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the length of a string.</p>
+
+<pre>
+<span class="php-comment">// Get the length of a string</span>
+<span
+class="php-var">$length</span> = Str::length(<span
+class="php-quote">'Taylor Otwell'</span>);
+
+<span
+class="php-comment">// Get the length of a multi-byte string</span>
+<span
+class="php-var">$length</span> = Str::length(<span
+class="php-quote">'Τάχιστη'</span>)
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lower" id="_lower">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lower">#</a>
+		<code><a href="source-class-Laravel.Str.html#36" title="Go to source code">lower</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Convert a string to lowercase.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Convert a string to lowercase.</p>
+
+<pre>
+<span class="php-comment">// Convert a string to lowercase</span>
+<span
+class="php-var">$lower</span> = Str::lower(<span
+class="php-quote">'Taylor Otwell'</span>);
+
+<span
+class="php-comment">// Convert a multi-byte string to lowercase</span>
+<span
+class="php-var">$lower</span> = Str::lower(<span
+class="php-quote">'Τάχιστη'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="upper" id="_upper">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_upper">#</a>
+		<code><a href="source-class-Laravel.Str.html#55" title="Go to source code">upper</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Convert a string to uppercase.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Convert a string to uppercase.</p>
+
+<pre>
+<span class="php-comment">// Convert a string to uppercase</span>
+<span
+class="php-var">$upper</span> = Str::upper(<span
+class="php-quote">'Taylor Otwell'</span>);
+
+<span
+class="php-comment">// Convert a multi-byte string to uppercase</span>
+<span
+class="php-var">$upper</span> = Str::upper(<span
+class="php-quote">'Τάχιστη'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="title" id="_title">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_title">#</a>
+		<code><a href="source-class-Laravel.Str.html#74" title="Go to source code">title</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Convert a string to title case (ucwords equivalent).</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Convert a string to title case (ucwords equivalent).</p>
+
+<pre>
+<span class="php-comment">// Convert a string to title case</span>
+<span
+class="php-var">$title</span> = Str::title(<span
+class="php-quote">'taylor otwell'</span>);
+
+<span
+class="php-comment">// Convert a multi-byte string to title case</span>
+<span
+class="php-var">$title</span> = Str::title(<span
+class="php-quote">'νωθρού κυνός'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="limit" id="_limit">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_limit">#</a>
+		<code><a href="source-class-Laravel.Str.html#98" title="Go to source code">limit</a>( <span>string <var>$value</var></span>, <span>integer <var>$limit</var> = <span class="php-num">100</span></span>, <span>string <var>$end</var> = <span class="php-quote">'...'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Limit the number of characters in a string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Limit the number of characters in a string.</p>
+
+<pre>
+<span class="php-comment">// Returns &quot;Tay...&quot;</span>
+<span
+class="php-keyword1">echo</span> Str::limit(<span
+class="php-quote">'Taylor Otwell'</span>, <span
+class="php-num">3</span>);
+
+<span
+class="php-comment">// Limit the number of characters and append a custom ending</span>
+<span
+class="php-keyword1">echo</span> Str::limit(<span
+class="php-quote">'Taylor Otwell'</span>, <span class="php-num">3</span>, <span
+class="php-quote">'---'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$limit</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$end</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="words" id="_words">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_words">#</a>
+		<code><a href="source-class-Laravel.Str.html#126" title="Go to source code">words</a>( <span>string <var>$value</var></span>, <span>integer <var>$words</var> = <span class="php-num">100</span></span>, <span>string <var>$end</var> = <span class="php-quote">'...'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Limit the number of words in a string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Limit the number of words in a string.</p>
+
+<pre>
+<span class="php-comment">// Returns &quot;This is a...&quot;</span>
+<span
+class="php-keyword1">echo</span> Str::words(<span
+class="php-quote">'This is a sentence.'</span>, <span
+class="php-num">3</span>);
+
+<span
+class="php-comment">// Limit the number of words and append a custom ending</span>
+<span
+class="php-keyword1">echo</span> Str::words(<span
+class="php-quote">'This is a sentence.'</span>, <span
+class="php-num">3</span>, <span class="php-quote">'---'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$words</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$end</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="singular" id="_singular">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_singular">#</a>
+		<code><a href="source-class-Laravel.Str.html#154" title="Go to source code">singular</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the singular form of the given word.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the singular form of the given word.</p>
+
+<p>The word should be defined in the "strings" configuration file.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="plural" id="_plural">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_plural">#</a>
+		<code><a href="source-class-Laravel.Str.html#171" title="Go to source code">plural</a>( <span>string <var>$value</var></span>, <span>integer <var>$count</var> = <span class="php-num">2</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the plural form of the given word.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the plural form of the given word.</p>
+
+<p>The word should be defined in the "strings" configuration file.</p>
+
+<pre>
+<span
+class="php-comment">// Returns the plural form of &quot;child&quot;</span>
+<span
+class="php-var">$plural</span> = Str::plural(<span
+class="php-quote">'child'</span>, <span class="php-num">10</span>);
+
+<span
+class="php-comment">// Returns the singular form of &quot;octocat&quot; since count is one</span>
+<span
+class="php-var">$plural</span> = Str::plural(<span
+class="php-quote">'octocat'</span>, <span class="php-num">1</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$count</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="slug" id="_slug">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_slug">#</a>
+		<code><a href="source-class-Laravel.Str.html#197" title="Go to source code">slug</a>( <span>string <var>$title</var></span>, <span>string <var>$separator</var> = <span class="php-quote">'-'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generate a URL friendly "slug" from a given string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate a URL friendly "slug" from a given string.</p>
+
+<pre>
+<span
+class="php-comment">// Returns &quot;this-is-my-blog-post&quot;</span>
+<span
+class="php-var">$slug</span> = Str::slug(<span
+class="php-quote">'This is my blog post!'</span>);
+
+<span
+class="php-comment">// Returns &quot;this_is_my_blog_post&quot;</span>
+<span
+class="php-var">$slug</span> = Str::slug(<span
+class="php-quote">'This is my blog post!'</span>, <span
+class="php-quote">'_'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$title</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$separator</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ascii" id="_ascii">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ascii">#</a>
+		<code><a href="source-class-Laravel.Str.html#225" title="Go to source code">ascii</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Convert a string to 7-bit ASCII.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Convert a string to 7-bit ASCII.</p>
+
+<p>This is helpful for converting UTF-8 strings for usage in URLs, etc.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="classify" id="_classify">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_classify">#</a>
+		<code><a href="source-class-Laravel.Str.html#242" title="Go to source code">classify</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Convert a string to an underscored, camel-cased class name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Convert a string to an underscored, camel-cased class name.</p>
+
+<p>This method is primarily used to format task and controller names.</p>
+
+<pre>
+<span class="php-comment">// Returns &quot;Task_Name&quot;</span>
+<span
+class="php-var">$class</span> = Str::classify(<span
+class="php-quote">'task_name'</span>);
+
+<span
+class="php-comment">// Returns &quot;Taylor_Otwell&quot;</span>
+<span
+class="php-var">$class</span> = Str::classify(<span
+class="php-quote">'taylor otwell'</span>)
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="segments" id="_segments">
+
+		<td class="attributes"><code>
+			
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_segments">#</a>
+		<code><a href="source-class-Laravel.Str.html#265" title="Go to source code">segments</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return the "URI" style segments in a given string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the "URI" style segments in a given string.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="random" id="_random">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_random">#</a>
+		<code><a href="source-class-Laravel.Str.html#276" title="Go to source code">random</a>( <span>integer <var>$length</var></span>, <span>string <var>$type</var> = <span class="php-quote">'alnum'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generate a random alpha or alpha-numeric string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate a random alpha or alpha-numeric string.</p>
+
+<p>&lt;code&gt; // Generate a 40 character random alpha-numeric string echo
+Str::random(40);</p>
+
+<p>// Generate a 16 character random alphabetic string echo Str::random(16,
+'alpha'); &lt;code&gt;</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$length</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="pool" id="_pool">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_pool">#</a>
+		<code><a href="source-class-Laravel.Str.html#296" title="Go to source code">pool</a>( <span>string <var>$type</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the character pool for a given type of random string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the character pool for a given type of random string.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

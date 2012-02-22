@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Routing\Filter</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3949239230" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Routing.Controller.html">Controller</a></li>
+				<li class="active"><a href="class-Laravel.Routing.Filter.html">Filter</a></li>
+				<li><a href="class-Laravel.Routing.Filter_Collection.html">Filter_Collection</a></li>
+				<li><a href="class-Laravel.Routing.Route.html">Route</a></li>
+				<li><a href="class-Laravel.Routing.Router.html">Router</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.Routing.html" title="Summary of Laravel\Routing"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Filter</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a>\<a href="namespace-Laravel.Routing.html">Routing</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Routing.Filter.html#7" title="Go to source code">routing/filter.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-Laravel.Routing.Filter.html#23" title="Go to source code">register</a>( <span>string <var>$name</var></span>, <span><a href="class-Closure.html">Closure</a> <var>$callback</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Register a filter for the application.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register a filter for the application.</p>
+
+<pre>
+<span
+class="php-comment">// Register a closure as a filter</span>
+Filter::register(<span
+class="php-quote">'before'</span>, <span
+class="php-keyword1">function</span>() {});
+
+<span
+class="php-comment">// Register a class callback as a filter</span>
+Filter::register(<span
+class="php-quote">'before'</span>, <span class="php-keyword1">array</span>(<span
+class="php-quote">'Class'</span>, <span
+class="php-quote">'method'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$callback</var></dt>
+					<dd><code><code><a href="class-Closure.html">Closure</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="alias" id="_alias">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_alias">#</a>
+		<code><a href="source-class-Laravel.Routing.Filter.html#45" title="Go to source code">alias</a>( <span>string <var>$filter</var></span>, <span>string <var>$alias</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Alias a filter so it can be used by another name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Alias a filter so it can be used by another name.</p>
+
+<p>This is convenient for shortening filters that are registered by bundles.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filter</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$alias</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parse" id="_parse">
+
+		<td class="attributes"><code>
+			
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parse">#</a>
+		<code><a href="source-class-Laravel.Routing.Filter.html#59" title="Go to source code">parse</a>( <span>string|array <var>$filters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse a filter definition into an array of filters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse a filter definition into an array of filters.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filters</var></dt>
+					<dd><code>string|array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="run" id="_run">
+
+		<td class="attributes"><code>
+			
+			 public static
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_run">#</a>
+		<code><a href="source-class-Laravel.Routing.Filter.html#70" title="Go to source code">run</a>( <span>array <var>$collections</var></span>, <span>array <var>$pass</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$override</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Call a filter or set of filters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Call a filter or set of filters.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$collections</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$pass</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$override</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="filters" id="$filters">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Filter.html#9" title="Go to source code"><var>$filters</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$filters" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The route filters for the application.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The route filters for the application.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="aliases" id="$aliases">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Filter.html#16" title="Go to source code"><var>$aliases</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$aliases" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All of the registered filter aliases.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All of the registered filter aliases.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

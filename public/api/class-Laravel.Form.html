@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Form</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3949239230" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Asset.html">Asset</a></li>
+				<li><a href="class-Laravel.Asset_Container.html">Asset_Container</a></li>
+				<li><a href="class-Laravel.Auth.html">Auth</a></li>
+				<li><a href="class-Laravel.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-Laravel.Blade.html">Blade</a></li>
+				<li><a href="class-Laravel.Bundle.html">Bundle</a></li>
+				<li><a href="class-Laravel.Cache.html">Cache</a></li>
+				<li><a href="class-Laravel.Config.html">Config</a></li>
+				<li><a href="class-Laravel.Cookie.html">Cookie</a></li>
+				<li><a href="class-Laravel.Crypter.html">Crypter</a></li>
+				<li><a href="class-Laravel.Database.html">Database</a></li>
+				<li><a href="class-Laravel.Error.html">Error</a></li>
+				<li><a href="class-Laravel.Event.html">Event</a></li>
+				<li><a href="class-Laravel.File.html">File</a></li>
+				<li><a href="class-Laravel.Fluent.html">Fluent</a></li>
+				<li class="active"><a href="class-Laravel.Form.html">Form</a></li>
+				<li><a href="class-Laravel.Hash.html">Hash</a></li>
+				<li><a href="class-Laravel.HTML.html">HTML</a></li>
+				<li><a href="class-Laravel.Input.html">Input</a></li>
+				<li><a href="class-Laravel.IoC.html">IoC</a></li>
+				<li><a href="class-Laravel.Lang.html">Lang</a></li>
+				<li><a href="class-Laravel.Log.html">Log</a></li>
+				<li><a href="class-Laravel.Memcached.html">Memcached</a></li>
+				<li><a href="class-Laravel.Messages.html">Messages</a></li>
+				<li><a href="class-Laravel.Paginator.html">Paginator</a></li>
+				<li><a href="class-Laravel.Redirect.html">Redirect</a></li>
+				<li><a href="class-Laravel.Redis.html">Redis</a></li>
+				<li><a href="class-Laravel.Request.html">Request</a></li>
+				<li><a href="class-Laravel.Response.html">Response</a></li>
+				<li><a href="class-Laravel.Section.html">Section</a></li>
+				<li><a href="class-Laravel.Session.html">Session</a></li>
+				<li><a href="class-Laravel.Str.html">Str</a></li>
+				<li><a href="class-Laravel.URI.html">URI</a></li>
+				<li><a href="class-Laravel.URL.html">URL</a></li>
+				<li><a href="class-Laravel.Validator.html">Validator</a></li>
+				<li><a href="class-Laravel.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.html" title="Summary of Laravel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Form</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Form.html#3" title="Go to source code">form.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="open" id="_open">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_open">#</a>
+		<code><a href="source-class-Laravel.Form.html#12" title="Go to source code">open</a>( <span>string <var>$action</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$method</var> = <span class="php-quote">'POST'</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$https</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Open a HTML form.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Open a HTML form.</p>
+
+<pre>
+<span
+class="php-comment">// Open a &quot;POST&quot; form to the current request URI</span>
+<span
+class="php-keyword1">echo</span> Form::open();
+
+<span
+class="php-comment">// Open a &quot;POST&quot; form to a given URI</span>
+<span
+class="php-keyword1">echo</span> Form::open(<span
+class="php-quote">'user/profile'</span>);
+
+<span
+class="php-comment">// Open a &quot;PUT&quot; form to a given URI</span>
+<span
+class="php-keyword1">echo</span> Form::open(<span
+class="php-quote">'user/profile'</span>, <span
+class="php-quote">'put'</span>);
+
+<span
+class="php-comment">// Open a form that has HTML attributes</span>
+<span
+class="php-keyword1">echo</span> Form::open(<span
+class="php-quote">'user/profile'</span>, <span
+class="php-quote">'post'</span>, <span class="php-keyword1">array</span>(<span
+class="php-quote">'class'</span> =&gt; <span
+class="php-quote">'profile'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$https</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="method" id="_method">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_method">#</a>
+		<code><a href="source-class-Laravel.Form.html#65" title="Go to source code">method</a>( <span>string <var>$method</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determine the appropriate request method to use for a form.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine the appropriate request method to use for a form.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="action" id="_action">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_action">#</a>
+		<code><a href="source-class-Laravel.Form.html#76" title="Go to source code">action</a>( <span>string <var>$action</var></span>, <span>boolean <var>$https</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determine the appropriate action parameter to use for a form.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine the appropriate action parameter to use for a form.</p>
+
+<p>If no action is specified, the current request URI will be used.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$https</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="open_secure" id="_open_secure">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_open_secure">#</a>
+		<code><a href="source-class-Laravel.Form.html#92" title="Go to source code">open_secure</a>( <span>string <var>$action</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$method</var> = <span class="php-quote">'POST'</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Open a HTML form with a HTTPS action URI.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Open a HTML form with a HTTPS action URI.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="open_for_files" id="_open_for_files">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_open_for_files">#</a>
+		<code><a href="source-class-Laravel.Form.html#105" title="Go to source code">open_for_files</a>( <span>string <var>$action</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$method</var> = <span class="php-quote">'POST'</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$https</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Open a HTML form that accepts file uploads.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Open a HTML form that accepts file uploads.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$https</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="open_secure_for_files" id="_open_secure_for_files">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_open_secure_for_files">#</a>
+		<code><a href="source-class-Laravel.Form.html#121" title="Go to source code">open_secure_for_files</a>( <span>string <var>$action</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$method</var> = <span class="php-quote">'POST'</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Open a HTML form that accepts file uploads with a HTTPS action URI.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Open a HTML form that accepts file uploads with a HTTPS action URI.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="close" id="_close">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_close">#</a>
+		<code><a href="source-class-Laravel.Form.html#134" title="Go to source code">close</a>( )</code>
+
+		<div class="description short">
+			
+<p>Close a HTML form.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Close a HTML form.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="token" id="_token">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_token">#</a>
+		<code><a href="source-class-Laravel.Form.html#144" title="Go to source code">token</a>( )</code>
+
+		<div class="description short">
+			
+<p>Generate a hidden field containing the current CSRF token.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate a hidden field containing the current CSRF token.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="label" id="_label">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_label">#</a>
+		<code><a href="source-class-Laravel.Form.html#154" title="Go to source code">label</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML label element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML label element.</p>
+
+<pre>
+<span
+class="php-comment">// Create a label for the &quot;email&quot; input element</span>
+<span
+class="php-keyword1">echo</span> Form::label(<span
+class="php-quote">'email'</span>, <span
+class="php-quote">'E-Mail Address'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="input" id="_input">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_input">#</a>
+		<code><a href="source-class-Laravel.Form.html#178" title="Go to source code">input</a>( <span>string <var>$type</var></span>, <span>string <var>$name</var></span>, <span>mixed <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML input element.</p>
+
+<pre>
+<span
+class="php-comment">// Create a &quot;text&quot; input element named &quot;email&quot;</span>
+<span
+class="php-keyword1">echo</span> Form::input(<span
+class="php-quote">'text'</span>, <span class="php-quote">'email'</span>);
+
+<span
+class="php-comment">// Create an input element with a specified default value</span>
+<span
+class="php-keyword1">echo</span> Form::input(<span
+class="php-quote">'text'</span>, <span class="php-quote">'email'</span>, <span
+class="php-quote">'example@gmail.com'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="text" id="_text">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_text">#</a>
+		<code><a href="source-class-Laravel.Form.html#206" title="Go to source code">text</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML text input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML text input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="password" id="_password">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_password">#</a>
+		<code><a href="source-class-Laravel.Form.html#219" title="Go to source code">password</a>( <span>string <var>$name</var></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML password input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML password input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hidden" id="_hidden">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hidden">#</a>
+		<code><a href="source-class-Laravel.Form.html#231" title="Go to source code">hidden</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML hidden input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML hidden input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="search" id="_search">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_search">#</a>
+		<code><a href="source-class-Laravel.Form.html#244" title="Go to source code">search</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML search input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML search input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="email" id="_email">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_email">#</a>
+		<code><a href="source-class-Laravel.Form.html#257" title="Go to source code">email</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML email input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML email input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="telephone" id="_telephone">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_telephone">#</a>
+		<code><a href="source-class-Laravel.Form.html#270" title="Go to source code">telephone</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML telephone input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML telephone input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="url" id="_url">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_url">#</a>
+		<code><a href="source-class-Laravel.Form.html#283" title="Go to source code">url</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML URL input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML URL input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="number" id="_number">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_number">#</a>
+		<code><a href="source-class-Laravel.Form.html#296" title="Go to source code">number</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML number input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML number input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="date" id="_date">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_date">#</a>
+		<code><a href="source-class-Laravel.Form.html#309" title="Go to source code">date</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML date input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML date input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="file" id="_file">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_file">#</a>
+		<code><a href="source-class-Laravel.Form.html#322" title="Go to source code">file</a>( <span>string <var>$name</var></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML file input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML file input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="textarea" id="_textarea">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_textarea">#</a>
+		<code><a href="source-class-Laravel.Form.html#334" title="Go to source code">textarea</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML textarea element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML textarea element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select" id="_select">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select">#</a>
+		<code><a href="source-class-Laravel.Form.html#355" title="Go to source code">select</a>( <span>string <var>$name</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$selected</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML select element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML select element.</p>
+
+<pre>
+<span
+class="php-comment">// Create a HTML select element filled with options</span>
+<span
+class="php-keyword1">echo</span> Form::select(<span
+class="php-quote">'sizes'</span>, <span class="php-keyword1">array</span>(<span
+class="php-quote">'S'</span> =&gt; <span class="php-quote">'Small'</span>, <span
+class="php-quote">'L'</span> =&gt; <span
+class="php-quote">'Large'</span>));
+
+<span
+class="php-comment">// Create a select element with a default selected value</span>
+<span
+class="php-keyword1">echo</span> Form::select(<span
+class="php-quote">'sizes'</span>, <span class="php-keyword1">array</span>(<span
+class="php-quote">'S'</span> =&gt; <span class="php-quote">'Small'</span>, <span
+class="php-quote">'L'</span> =&gt; <span
+class="php-quote">'Large'</span>), <span class="php-quote">'L'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$options</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$selected</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="option" id="_option">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_option">#</a>
+		<code><a href="source-class-Laravel.Form.html#388" title="Go to source code">option</a>( <span>string <var>$value</var></span>, <span>string <var>$display</var></span>, <span>string <var>$selected</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML select element option.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML select element option.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$display</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$selected</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkbox" id="_checkbox">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkbox">#</a>
+		<code><a href="source-class-Laravel.Form.html#412" title="Go to source code">checkbox</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-num">1</span></span>, <span>boolean <var>$checked</var> = <span class="php-keyword1">false</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML checkbox input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML checkbox input element.</p>
+
+<pre>
+<span class="php-comment">// Create a checkbox element</span>
+<span
+class="php-keyword1">echo</span> Form::checkbox(<span
+class="php-quote">'terms'</span>, <span class="php-quote">'yes'</span>);
+
+<span
+class="php-comment">// Create a checkbox that is selected by default</span>
+<span
+class="php-keyword1">echo</span> Form::checkbox(<span
+class="php-quote">'terms'</span>, <span class="php-quote">'yes'</span>, <span
+class="php-keyword1">true</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$checked</var></dt>
+					<dd><code>boolean</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="radio" id="_radio">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_radio">#</a>
+		<code><a href="source-class-Laravel.Form.html#434" title="Go to source code">radio</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$checked</var> = <span class="php-keyword1">false</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML radio button input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML radio button input element.</p>
+
+<pre>
+<span class="php-comment">// Create a radio button element</span>
+<span
+class="php-keyword1">echo</span> Form::radio(<span
+class="php-quote">'drinks'</span>, <span
+class="php-quote">'Milk'</span>);
+
+<span
+class="php-comment">// Create a radio button that is selected by default</span>
+<span
+class="php-keyword1">echo</span> Form::radio(<span
+class="php-quote">'drinks'</span>, <span class="php-quote">'Milk'</span>, <span
+class="php-keyword1">true</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$checked</var></dt>
+					<dd><code>boolean</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkable" id="_checkable">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkable">#</a>
+		<code><a href="source-class-Laravel.Form.html#458" title="Go to source code">checkable</a>( <span>string <var>$type</var></span>, <span>string <var>$name</var></span>, <span>string <var>$value</var></span>, <span>boolean <var>$checked</var></span>, <span>array <var>$attributes</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a checkable input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a checkable input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$checked</var></dt>
+					<dd><code>boolean</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="submit" id="_submit">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_submit">#</a>
+		<code><a href="source-class-Laravel.Form.html#477" title="Go to source code">submit</a>( <span>string <var>$value</var></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML submit input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML submit input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="reset" id="_reset">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_reset">#</a>
+		<code><a href="source-class-Laravel.Form.html#489" title="Go to source code">reset</a>( <span>string <var>$value</var></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML reset input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML reset input element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="image" id="_image">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_image">#</a>
+		<code><a href="source-class-Laravel.Form.html#501" title="Go to source code">image</a>( <span>string <var>$url</var></span>, <span>string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML image input element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML image input element.</p>
+
+<pre>
+<span class="php-comment">// Create an image input element</span>
+<span
+class="php-keyword1">echo</span> Form::image(<span
+class="php-quote">'img/submit.png'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$url</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="button" id="_button">
+
+		<td class="attributes"><code>
+			
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_button">#</a>
+		<code><a href="source-class-Laravel.Form.html#521" title="Go to source code">button</a>( <span>string <var>$value</var></span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML button element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML button element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="id" id="_id">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_id">#</a>
+		<code><a href="source-class-Laravel.Form.html#533" title="Go to source code">id</a>( <span>string <var>$name</var></span>, <span>array <var>$attributes</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determine the ID attribute for a form element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine the ID attribute for a form element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="labels" id="$labels">
+
+		<td class="attributes"><code>
+			
+			protected static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Form.html#5" title="Go to source code"><var>$labels</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$labels" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All of the label names that have been created.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All of the label names that have been created.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

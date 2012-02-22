@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Response</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3949239230" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Asset.html">Asset</a></li>
+				<li><a href="class-Laravel.Asset_Container.html">Asset_Container</a></li>
+				<li><a href="class-Laravel.Auth.html">Auth</a></li>
+				<li><a href="class-Laravel.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-Laravel.Blade.html">Blade</a></li>
+				<li><a href="class-Laravel.Bundle.html">Bundle</a></li>
+				<li><a href="class-Laravel.Cache.html">Cache</a></li>
+				<li><a href="class-Laravel.Config.html">Config</a></li>
+				<li><a href="class-Laravel.Cookie.html">Cookie</a></li>
+				<li><a href="class-Laravel.Crypter.html">Crypter</a></li>
+				<li><a href="class-Laravel.Database.html">Database</a></li>
+				<li><a href="class-Laravel.Error.html">Error</a></li>
+				<li><a href="class-Laravel.Event.html">Event</a></li>
+				<li><a href="class-Laravel.File.html">File</a></li>
+				<li><a href="class-Laravel.Fluent.html">Fluent</a></li>
+				<li><a href="class-Laravel.Form.html">Form</a></li>
+				<li><a href="class-Laravel.Hash.html">Hash</a></li>
+				<li><a href="class-Laravel.HTML.html">HTML</a></li>
+				<li><a href="class-Laravel.Input.html">Input</a></li>
+				<li><a href="class-Laravel.IoC.html">IoC</a></li>
+				<li><a href="class-Laravel.Lang.html">Lang</a></li>
+				<li><a href="class-Laravel.Log.html">Log</a></li>
+				<li><a href="class-Laravel.Memcached.html">Memcached</a></li>
+				<li><a href="class-Laravel.Messages.html">Messages</a></li>
+				<li><a href="class-Laravel.Paginator.html">Paginator</a></li>
+				<li><a href="class-Laravel.Redirect.html">Redirect</a></li>
+				<li><a href="class-Laravel.Redis.html">Redis</a></li>
+				<li><a href="class-Laravel.Request.html">Request</a></li>
+				<li class="active"><a href="class-Laravel.Response.html">Response</a></li>
+				<li><a href="class-Laravel.Section.html">Section</a></li>
+				<li><a href="class-Laravel.Session.html">Session</a></li>
+				<li><a href="class-Laravel.Str.html">Str</a></li>
+				<li><a href="class-Laravel.URI.html">URI</a></li>
+				<li><a href="class-Laravel.URL.html">URL</a></li>
+				<li><a href="class-Laravel.Validator.html">Validator</a></li>
+				<li><a href="class-Laravel.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.html" title="Summary of Laravel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Response</h1>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Laravel.Redirect.html">Laravel\Redirect</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Response.html#3" title="Go to source code">response.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Laravel.Response.html#80" title="Go to source code">__construct</a>( <span>mixed <var>$content</var></span>, <span>integer <var>$status</var> = <span class="php-num">200</span></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new response instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new response instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$content</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$status</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$headers</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="make" id="_make">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Response.html">Laravel\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_make">#</a>
+		<code><a href="source-class-Laravel.Response.html#95" title="Go to source code">make</a>( <span>mixed <var>$content</var></span>, <span>integer <var>$status</var> = <span class="php-num">200</span></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new response instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new response instance.</p>
+
+<pre>
+<span
+class="php-comment">// Create a response instance with string content</span>
+<span
+class="php-keyword1">return</span> Response::make(<span
+class="php-keyword2">json_encode</span>(<span
+class="php-var">$user</span>));
+
+<span
+class="php-comment">// Create a response instance with a given status</span>
+<span
+class="php-keyword1">return</span> Response::make(<span
+class="php-quote">'Not Found'</span>, <span class="php-num">404</span>);
+
+<span
+class="php-comment">// Create a response with some custom headers</span>
+<span
+class="php-keyword1">return</span> Response::make(<span
+class="php-keyword2">json_encode</span>(<span
+class="php-var">$user</span>), <span class="php-num">200</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-quote">'header'</span> =&gt; <span
+class="php-quote">'value'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$content</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$status</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$headers</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Response.html">Laravel\Response</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="view" id="_view">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Response.html">Laravel\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_view">#</a>
+		<code><a href="source-class-Laravel.Response.html#119" title="Go to source code">view</a>( <span>string <var>$view</var></span>, <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new response instance containing a view.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new response instance containing a view.</p>
+
+<pre>
+<span
+class="php-comment">// Create a response instance with a view</span>
+<span
+class="php-keyword1">return</span> Response::view(<span
+class="php-quote">'home.index'</span>);
+
+<span
+class="php-comment">// Create a response instance with a view and data</span>
+<span
+class="php-keyword1">return</span> Response::view(<span
+class="php-quote">'home.index'</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-quote">'name'</span> =&gt; <span
+class="php-quote">'Taylor'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Response.html">Laravel\Response</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="error" id="_error">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Response.html">Laravel\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_error">#</a>
+		<code><a href="source-class-Laravel.Response.html#139" title="Go to source code">error</a>( <span>integer <var>$code</var></span>, <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new error response instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new error response instance.</p>
+
+<p>The response status code will be set using the specified code.</p>
+
+<p>The specified error should match a view in your views/error directory.</p>
+
+<pre>
+<span class="php-comment">// Create a 404 response</span>
+<span
+class="php-keyword1">return</span> Response::error(<span
+class="php-quote">'404'</span>);
+
+<span
+class="php-comment">// Create a 404 response with data</span>
+<span
+class="php-keyword1">return</span> Response::error(<span
+class="php-quote">'404'</span>, <span class="php-keyword1">array</span>(<span
+class="php-quote">'message'</span> =&gt; <span
+class="php-quote">'Not Found'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$code</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Response.html">Laravel\Response</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="download" id="_download">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Response.html">Laravel\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_download">#</a>
+		<code><a href="source-class-Laravel.Response.html#163" title="Go to source code">download</a>( <span>string <var>$path</var></span>, <span>string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new download response instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new download response instance.</p>
+
+<pre>
+<span
+class="php-comment">// Create a download response to a given file</span>
+<span
+class="php-keyword1">return</span> Response::download(<span
+class="php-quote">'path/to/file.jpg'</span>);
+
+<span
+class="php-comment">// Create a download response with a given file name</span>
+<span
+class="php-keyword1">return</span> Response::download(<span
+class="php-quote">'path/to/file.jpg'</span>, <span
+class="php-quote">'your_file.jpg'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$headers</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Response.html">Laravel\Response</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepare" id="_prepare">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Response.html">Laravel\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepare">#</a>
+		<code><a href="source-class-Laravel.Response.html#197" title="Go to source code">prepare</a>( <span>mixed <var>$response</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Prepare a response from the given value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Prepare a response from the given value.</p>
+
+<p>If the value is not a response, it will be converted into a response instance
+and the content will be cast to a string.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$response</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Response.html">Laravel\Response</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="render" id="_render">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_render">#</a>
+		<code><a href="source-class-Laravel.Response.html#225" title="Go to source code">render</a>( )</code>
+
+		<div class="description short">
+			
+<p>Convert the content of the Response to a string and return it.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Convert the content of the Response to a string and return it.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="send" id="_send">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_send">#</a>
+		<code><a href="source-class-Laravel.Response.html#244" title="Go to source code">send</a>( )</code>
+
+		<div class="description short">
+			
+<p>Send the headers and content of the response to the browser.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Send the headers and content of the response to the browser.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="send_headers" id="_send_headers">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_send_headers">#</a>
+		<code><a href="source-class-Laravel.Response.html#256" title="Go to source code">send_headers</a>( )</code>
+
+		<div class="description short">
+			
+<p>Send all of the response headers to the browser.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Send all of the response headers to the browser.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="message" id="_message">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_message">#</a>
+		<code><a href="source-class-Laravel.Response.html#298" title="Go to source code">message</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the status code message for the response.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the status code message for the response.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="header" id="_header">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Response.html">Laravel\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_header">#</a>
+		<code><a href="source-class-Laravel.Response.html#308" title="Go to source code">header</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a header to the array of response headers.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a header to the array of response headers.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Response.html">Laravel\Response</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="status" id="_status">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Response.html">Laravel\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_status">#</a>
+		<code><a href="source-class-Laravel.Response.html#321" title="Go to source code">status</a>( <span>integer <var>$status</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the response status code.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the response status code.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$status</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Response.html">Laravel\Response</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="content" id="$content">
+
+		<td class="attributes"><code>
+			
+			public 
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Response.html#5" title="Go to source code"><var>$content</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$content" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The content of the response.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The content of the response.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="status" id="$status">
+
+		<td class="attributes"><code>
+			
+			public 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Response.html#12" title="Go to source code"><var>$status</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">200</span></code></td>
+		<td class="description"><div>
+			<a href="#$status" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The HTTP status code of the response.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The HTTP status code of the response.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="headers" id="$headers">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Response.html#19" title="Go to source code"><var>$headers</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$headers" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The response headers.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The response headers.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="statuses" id="$statuses">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Response.html#26" title="Go to source code"><var>$statuses</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+	<span class="php-num">100</span> =&gt; <span class="php-quote">'Continue'</span>,
+	<span class="php-num">101</span> =&gt; <span class="php-quote">'Switching Protocols'</span>,
+	<span class="php-num">200</span> =&gt; <span class="php-quote">'OK'</span>,
+	<span class="php-num">201</span> =&gt; <span class="php-quote">'Created'</span>,
+	<span class="php-num">202</span> =&gt; <span class="php-quote">'Accepted'</span>,
+	<span class="php-num">203</span> =&gt; <span class="php-quote">'Non-Authoritative Information'</span>,
+	<span class="php-num">204</span> =&gt; <span class="php-quote">'No Content'</span>,
+	<span class="php-num">205</span> =&gt; <span class="php-quote">'Reset Content'</span>,
+	<span class="php-num">206</span> =&gt; <span class="php-quote">'Partial Content'</span>,
+	<span class="php-num">207</span> =&gt; <span class="php-quote">'Multi-Status'</span>,
+	<span class="php-num">300</span> =&gt; <span class="php-quote">'Multiple Choices'</span>,
+	<span class="php-num">301</span> =&gt; <span class="php-quote">'Moved Permanently'</span>,
+	<span class="php-num">302</span> =&gt; <span class="php-quote">'Found'</span>,
+	<span class="php-num">303</span> =&gt; <span class="php-quote">'See Other'</span>,
+	<span class="php-num">304</span> =&gt; <span class="php-quote">'Not Modified'</span>,
+	<span class="php-num">305</span> =&gt; <span class="php-quote">'Use Proxy'</span>,
+	<span class="php-num">307</span> =&gt; <span class="php-quote">'Temporary Redirect'</span>,
+	<span class="php-num">400</span> =&gt; <span class="php-quote">'Bad Request'</span>,
+	<span class="php-num">401</span> =&gt; <span class="php-quote">'Unauthorized'</span>,
+	<span class="php-num">402</span> =&gt; <span class="php-quote">'Payment Required'</span>,
+	<span class="php-num">403</span> =&gt; <span class="php-quote">'Forbidden'</span>,
+	<span class="php-num">404</span> =&gt; <span class="php-quote">'Not Found'</span>,
+	<span class="php-num">405</span> =&gt; <span class="php-quote">'Method Not Allowed'</span>,
+	<span class="php-num">406</span> =&gt; <span class="php-quote">'Not Acceptable'</span>,
+	<span class="php-num">407</span> =&gt; <span class="php-quote">'Proxy Authentication Required'</span>,
+	<span class="php-num">408</span> =&gt; <span class="php-quote">'Request Timeout'</span>,
+	<span class="php-num">409</span> =&gt; <span class="php-quote">'Conflict'</span>,
+	<span class="php-num">410</span> =&gt; <span class="php-quote">'Gone'</span>,
+	<span class="php-num">411</span> =&gt; <span class="php-quote">'Length Required'</span>,
+	<span class="php-num">412</span> =&gt; <span class="php-quote">'Precondition Failed'</span>,
+	<span class="php-num">413</span> =&gt; <span class="php-quote">'Request Entity Too Large'</span>,
+	<span class="php-num">414</span> =&gt; <span class="php-quote">'Request-URI Too Long'</span>,
+	<span class="php-num">415</span> =&gt; <span class="php-quote">'Unsupported Media Type'</span>,
+	<span class="php-num">416</span> =&gt; <span class="php-quote">'Requested Range Not Satisfiable'</span>,
+	<span class="php-num">417</span> =&gt; <span class="php-quote">'Expectation Failed'</span>,
+	<span class="php-num">422</span> =&gt; <span class="php-quote">'Unprocessable Entity'</span>,
+	<span class="php-num">423</span> =&gt; <span class="php-quote">'Locked'</span>,
+	<span class="php-num">424</span> =&gt; <span class="php-quote">'Failed Dependency'</span>,
+	<span class="php-num">500</span> =&gt; <span class="php-quote">'Internal Server Error'</span>,
+	<span class="php-num">501</span> =&gt; <span class="php-quote">'Not Implemented'</span>,
+	<span class="php-num">502</span> =&gt; <span class="php-quote">'Bad Gateway'</span>,
+	<span class="php-num">503</span> =&gt; <span class="php-quote">'Service Unavailable'</span>,
+	<span class="php-num">504</span> =&gt; <span class="php-quote">'Gateway Timeout'</span>,
+	<span class="php-num">505</span> =&gt; <span class="php-quote">'HTTP Version Not Supported'</span>,
+	<span class="php-num">507</span> =&gt; <span class="php-quote">'Insufficient Storage'</span>,
+	<span class="php-num">509</span> =&gt; <span class="php-quote">'Bandwidth Limit Exceeded'</span>
+)</code></td>
+		<td class="description"><div>
+			<a href="#$statuses" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>HTTP status codes.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>HTTP status codes.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Database\Query\Grammars\Grammar</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3949239230" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="active main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="active main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Laravel.Database.Query.Grammars.Grammar.html">Grammar</a></li>
+				<li><a href="class-Laravel.Database.Query.Grammars.MySQL.html">MySQL</a></li>
+				<li><a href="class-Laravel.Database.Query.Grammars.SQLServer.html">SQLServer</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.Database.Query.Grammars.html" title="Summary of Laravel\Database\Query\Grammars"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Grammar</h1>
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Laravel.Database.Grammar.html">Laravel\Database\Grammar</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b>Laravel\Database\Query\Grammars\Grammar</b>			
+			
+			
+		</dd>
+	</dl>
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Laravel.Database.Query.Grammars.MySQL.html">Laravel\Database\Query\Grammars\MySQL</a>, 
+			<a href="class-Laravel.Database.Query.Grammars.SQLServer.html">Laravel\Database\Query\Grammars\SQLServer</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a>\<a href="namespace-Laravel.Database.html">Database</a>\<a href="namespace-Laravel.Database.Query.html">Query</a>\<a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#6" title="Go to source code">database/query/grammars/grammar.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="select" id="_select">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#18" title="Go to source code">select</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a SQL SELECT statement from a Query instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a SQL SELECT statement from a Query instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="components" id="_components">
+
+		<td class="attributes"><code>
+			
+			final protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_components">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#29" title="Go to source code">components</a>( <span><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Generate the SQL for every component of the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate the SQL for every component of the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="concatenate" id="_concatenate">
+
+		<td class="attributes"><code>
+			
+			final protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_concatenate">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#55" title="Go to source code">concatenate</a>( <span>array <var>$components</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Concatenate an array of SQL segments, removing those that are empty.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Concatenate an array of SQL segments, removing those that are empty.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$components</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selects" id="_selects">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selects">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#69" title="Go to source code">selects</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile the SELECT clause for a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile the SELECT clause for a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="aggregate" id="_aggregate">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_aggregate">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#84" title="Go to source code">aggregate</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile an aggregating SELECT clause for a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile an aggregating SELECT clause for a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="from" id="_from">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_from">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#99" title="Go to source code">from</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile the FROM clause for a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile the FROM clause for a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="joins" id="_joins">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_joins">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#110" title="Go to source code">joins</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile the JOIN clauses for a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile the JOIN clauses for a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="wheres" id="_wheres">
+
+		<td class="attributes"><code>
+			
+			final protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_wheres">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#164" title="Go to source code">wheres</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile the WHERE clause for a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile the WHERE clause for a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_nested" id="_where_nested">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_nested">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#195" title="Go to source code">where_nested</a>( <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a nested WHERE clause.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a nested WHERE clause.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where" id="_where">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#206" title="Go to source code">where</a>( <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a simple WHERE clause.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a simple WHERE clause.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_in" id="_where_in">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_in">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#219" title="Go to source code">where_in</a>( <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a WHERE IN clause.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a WHERE IN clause.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_not_in" id="_where_not_in">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_not_in">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#232" title="Go to source code">where_not_in</a>( <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a WHERE NOT IN clause.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a WHERE NOT IN clause.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_null" id="_where_null">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_null">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#245" title="Go to source code">where_null</a>( <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a WHERE NULL clause.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a WHERE NULL clause.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_not_null" id="_where_not_null">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_not_null">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#256" title="Go to source code">where_not_null</a>( <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a WHERE NULL clause.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a WHERE NULL clause.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_raw" id="_where_raw">
+
+		<td class="attributes"><code>
+			
+			final protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_raw">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#267" title="Go to source code">where_raw</a>( <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a raw WHERE clause.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a raw WHERE clause.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="groupings" id="_groupings">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_groupings">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#278" title="Go to source code">groupings</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile the GROUP BY clause for a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile the GROUP BY clause for a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="orderings" id="_orderings">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_orderings">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#289" title="Go to source code">orderings</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile the ORDER BY clause for a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile the ORDER BY clause for a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="limit" id="_limit">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_limit">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#307" title="Go to source code">limit</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile the LIMIT clause for a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile the LIMIT clause for a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offset" id="_offset">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offset">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#318" title="Go to source code">offset</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile the OFFSET clause for a query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile the OFFSET clause for a query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#329" title="Go to source code">insert</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span>, <span>array <var>$values</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a SQL INSERT statment from a Query instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a SQL INSERT statment from a Query instance.</p>
+
+<p>This method handles the compilation of single row inserts and batch
+inserts.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#362" title="Go to source code">update</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span>, <span>array <var>$values</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a SQL UPDATE statment from a Query instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a SQL UPDATE statment from a Query instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#391" title="Go to source code">delete</a>( <span><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a> <var>$query</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Compile a SQL DELETE statment from a Query instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Compile a SQL DELETE statment from a Query instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="shortcut" id="_shortcut">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_shortcut">#</a>
+		<code><a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#407" title="Go to source code">shortcut</a>( <span>string <var>$sql</var></span>, <span>array <var>$bindings</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Transform an SQL short-cuts into real SQL for PDO.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Transform an SQL short-cuts into real SQL for PDO.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$bindings</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Laravel.Database.Grammar.html#methods">Laravel\Database\Grammar</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Laravel.Database.Grammar.html#___construct">__construct()</a>, 
+<a href="class-Laravel.Database.Grammar.html#_columnize">columnize()</a>, 
+<a href="class-Laravel.Database.Grammar.html#_parameter">parameter()</a>, 
+<a href="class-Laravel.Database.Grammar.html#_parameterize">parameterize()</a>, 
+<a href="class-Laravel.Database.Grammar.html#_wrap">wrap()</a>, 
+<a href="class-Laravel.Database.Grammar.html#_wrap_table">wrap_table()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="components" id="$components">
+
+		<td class="attributes"><code>
+			
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.Grammars.Grammar.html#8" title="Go to source code"><var>$components</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+	<span class="php-quote">'aggregate'</span>, <span class="php-quote">'selects'</span>, <span class="php-quote">'from'</span>, <span class="php-quote">'joins'</span>, <span class="php-quote">'wheres'</span>,
+	<span class="php-quote">'groupings'</span>, <span class="php-quote">'orderings'</span>, <span class="php-quote">'limit'</span>, <span class="php-quote">'offset'</span>,
+)</code></td>
+		<td class="description"><div>
+			<a href="#$components" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All of the query componenets in the order they should be built.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All of the query componenets in the order they should be built.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Laravel.Database.Grammar.html#properties">Laravel\Database\Grammar</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Laravel.Database.Grammar.html#$connection"><var>$connection</var></a>, 
+<a href="class-Laravel.Database.Grammar.html#$wrapper"><var>$wrapper</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

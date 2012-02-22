@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\View</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3949239230" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Asset.html">Asset</a></li>
+				<li><a href="class-Laravel.Asset_Container.html">Asset_Container</a></li>
+				<li><a href="class-Laravel.Auth.html">Auth</a></li>
+				<li><a href="class-Laravel.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-Laravel.Blade.html">Blade</a></li>
+				<li><a href="class-Laravel.Bundle.html">Bundle</a></li>
+				<li><a href="class-Laravel.Cache.html">Cache</a></li>
+				<li><a href="class-Laravel.Config.html">Config</a></li>
+				<li><a href="class-Laravel.Cookie.html">Cookie</a></li>
+				<li><a href="class-Laravel.Crypter.html">Crypter</a></li>
+				<li><a href="class-Laravel.Database.html">Database</a></li>
+				<li><a href="class-Laravel.Error.html">Error</a></li>
+				<li><a href="class-Laravel.Event.html">Event</a></li>
+				<li><a href="class-Laravel.File.html">File</a></li>
+				<li><a href="class-Laravel.Fluent.html">Fluent</a></li>
+				<li><a href="class-Laravel.Form.html">Form</a></li>
+				<li><a href="class-Laravel.Hash.html">Hash</a></li>
+				<li><a href="class-Laravel.HTML.html">HTML</a></li>
+				<li><a href="class-Laravel.Input.html">Input</a></li>
+				<li><a href="class-Laravel.IoC.html">IoC</a></li>
+				<li><a href="class-Laravel.Lang.html">Lang</a></li>
+				<li><a href="class-Laravel.Log.html">Log</a></li>
+				<li><a href="class-Laravel.Memcached.html">Memcached</a></li>
+				<li><a href="class-Laravel.Messages.html">Messages</a></li>
+				<li><a href="class-Laravel.Paginator.html">Paginator</a></li>
+				<li><a href="class-Laravel.Redirect.html">Redirect</a></li>
+				<li><a href="class-Laravel.Redis.html">Redis</a></li>
+				<li><a href="class-Laravel.Request.html">Request</a></li>
+				<li><a href="class-Laravel.Response.html">Response</a></li>
+				<li><a href="class-Laravel.Section.html">Section</a></li>
+				<li><a href="class-Laravel.Session.html">Session</a></li>
+				<li><a href="class-Laravel.Str.html">Str</a></li>
+				<li><a href="class-Laravel.URI.html">URI</a></li>
+				<li><a href="class-Laravel.URL.html">URL</a></li>
+				<li><a href="class-Laravel.Validator.html">Validator</a></li>
+				<li class="active"><a href="class-Laravel.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.html" title="Summary of Laravel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class View</h1>
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b>Laravel\View</b>			
+			 implements 
+				<a href="class-ArrayAccess.html">ArrayAccess</a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.View.html#3" title="Go to source code">view.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Laravel.View.html#40" title="Go to source code">__construct</a>( <span>string <var>$view</var></span>, <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new view instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new view instance.</p>
+
+<pre>
+<span class="php-comment">// Create a new view instance</span>
+<span
+class="php-var">$view</span> = <span class="php-keyword1">new</span> View(<span
+class="php-quote">'home.index'</span>);
+
+<span
+class="php-comment">// Create a new view instance of a bundle's view</span>
+<span
+class="php-var">$view</span> = <span class="php-keyword1">new</span> View(<span
+class="php-quote">'admin::home.index'</span>);
+
+<span
+class="php-comment">// Create a new view instance with bound data</span>
+<span
+class="php-var">$view</span> = <span class="php-keyword1">new</span> View(<span
+class="php-quote">'home.index'</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-quote">'name'</span> =&gt; <span
+class="php-quote">'Taylor'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="path" id="_path">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_path">#</a>
+		<code><a href="source-class-Laravel.View.html#84" title="Go to source code">path</a>( <span>string <var>$view</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the path to a given view on disk.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the path to a given view on disk.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="make" id="_make">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.View.html">Laravel\View</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_make">#</a>
+		<code><a href="source-class-Laravel.View.html#110" title="Go to source code">make</a>( <span>string <var>$view</var></span>, <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new view instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new view instance.</p>
+
+<pre>
+<span class="php-comment">// Create a new view instance</span>
+<span
+class="php-var">$view</span> = View::make(<span
+class="php-quote">'home.index'</span>);
+
+<span
+class="php-comment">// Create a new view instance of a bundle's view</span>
+<span
+class="php-var">$view</span> = View::make(<span
+class="php-quote">'admin::home.index'</span>);
+
+<span
+class="php-comment">// Create a new view instance with bound data</span>
+<span
+class="php-var">$view</span> = View::make(<span
+class="php-quote">'home.index'</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-quote">'name'</span> =&gt; <span
+class="php-quote">'Taylor'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.View.html">Laravel\View</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="of" id="_of">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.View.html">Laravel\View</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_of">#</a>
+		<code><a href="source-class-Laravel.View.html#133" title="Go to source code">of</a>( <span>string <var>$name</var></span>, <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new view instance of a named view.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new view instance of a named view.</p>
+
+<pre>
+<span class="php-comment">// Create a new named view instance</span>
+<span
+class="php-var">$view</span> = View::of(<span
+class="php-quote">'profile'</span>);
+
+<span
+class="php-comment">// Create a new named view instance with bound data</span>
+<span
+class="php-var">$view</span> = View::of(<span
+class="php-quote">'profile'</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-quote">'name'</span> =&gt; <span
+class="php-quote">'Taylor'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.View.html">Laravel\View</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="name" id="_name">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_name">#</a>
+		<code><a href="source-class-Laravel.View.html#153" title="Go to source code">name</a>( <span>string <var>$view</var></span>, <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Assign a name to a view.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Assign a name to a view.</p>
+
+<pre>
+<span
+class="php-comment">// Assign a name to a view</span>
+View::name(<span
+class="php-quote">'partials.profile'</span>, <span
+class="php-quote">'profile'</span>);
+
+<span
+class="php-comment">// Resolve an instance of a named view</span>
+<span
+class="php-var">$view</span> = View::of(<span
+class="php-quote">'profile'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="composer" id="_composer">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_composer">#</a>
+		<code><a href="source-class-Laravel.View.html#173" title="Go to source code">composer</a>( <span>string <var>$view</var></span>, <span><code><a href="class-Closure.html">Closure</a></code> <var>$composer</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Register a view composer with the Event class.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register a view composer with the Event class.</p>
+
+<pre>
+<span
+class="php-comment">// Register a composer for the &quot;home.index&quot; view</span>
+View::composer(<span
+class="php-quote">'home.index'</span>, <span
+class="php-keyword1">function</span>(<span class="php-var">$view</span>)
+{
+<span
+class="php-var">$view</span>[<span class="php-quote">'title'</span>] = <span
+class="php-quote">'Home'</span>;
+});
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$view</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$composer</var></dt>
+					<dd><code><code><a href="class-Closure.html">Closure</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="render" id="_render">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_render">#</a>
+		<code><a href="source-class-Laravel.View.html#193" title="Go to source code">render</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the evaluated string content of the view.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the evaluated string content of the view.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="data" id="_data">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_data">#</a>
+		<code><a href="source-class-Laravel.View.html#226" title="Go to source code">data</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the array of view data for the view instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the array of view data for the view instance.</p>
+
+<p>The shared view data will be combined with the view data for the
+instance.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="compile" id="_compile">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_compile">#</a>
+		<code><a href="source-class-Laravel.View.html#251" title="Go to source code">compile</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the path to the compiled version of the Blade view.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the path to the compiled version of the Blade view.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="nest" id="_nest">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.View.html">Laravel\View</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_nest">#</a>
+		<code><a href="source-class-Laravel.View.html#274" title="Go to source code">nest</a>( <span>string <var>$key</var></span>, <span>string <var>$view</var></span>, <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Add a view instance to the view data.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a view instance to the view data.</p>
+
+<pre>
+<span
+class="php-comment">// Add a view instance to a view's data</span>
+<span
+class="php-var">$view</span> = View::make(<span
+class="php-quote">'foo'</span>)-&gt;nest(<span
+class="php-quote">'footer'</span>, <span
+class="php-quote">'partials.footer'</span>);
+
+<span
+class="php-comment">// Equivalent functionality using the &quot;with&quot; method</span>
+<span
+class="php-var">$view</span> = View::make(<span
+class="php-quote">'foo'</span>)-&gt;with(<span
+class="php-quote">'footer'</span>, View::make(<span
+class="php-quote">'partials.footer'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$view</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.View.html">Laravel\View</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="with" id="_with">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.View.html">Laravel\View</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_with">#</a>
+		<code><a href="source-class-Laravel.View.html#295" title="Go to source code">with</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a key / value pair to the view data.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a key / value pair to the view data.</p>
+
+<p>Bound data will be available to the view as variables.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.View.html">Laravel\View</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="share" id="_share">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_share">#</a>
+		<code><a href="source-class-Laravel.View.html#310" title="Go to source code">share</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a key / value pair to the shared view data.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a key / value pair to the shared view data.</p>
+
+<p>Shared view data is accessible to every view created by the application.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetExists" id="_offsetExists">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetExists">#</a>
+		<code><a href="source-class-Laravel.View.html#324" title="Go to source code">offsetExists</a>( <span> <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Implementation of the ArrayAccess offsetExists method.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Implementation of the ArrayAccess offsetExists method.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetExists">ArrayAccess::offsetExists</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetGet" id="_offsetGet">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetGet">#</a>
+		<code><a href="source-class-Laravel.View.html#332" title="Go to source code">offsetGet</a>( <span> <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Implementation of the ArrayAccess offsetGet method.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Implementation of the ArrayAccess offsetGet method.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetGet">ArrayAccess::offsetGet</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetSet" id="_offsetSet">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetSet">#</a>
+		<code><a href="source-class-Laravel.View.html#340" title="Go to source code">offsetSet</a>( <span> <var>$offset</var></span>, <span> <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Implementation of the ArrayAccess offsetSet method.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Implementation of the ArrayAccess offsetSet method.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetSet">ArrayAccess::offsetSet</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetUnset" id="_offsetUnset">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetUnset">#</a>
+		<code><a href="source-class-Laravel.View.html#348" title="Go to source code">offsetUnset</a>( <span> <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Implementation of the ArrayAccess offsetUnset method.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Implementation of the ArrayAccess offsetUnset method.</p>
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_offsetUnset">ArrayAccess::offsetUnset</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-Laravel.View.html#356" title="Go to source code">__get</a>( <span> <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Magic Method for handling dynamic data access.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Magic Method for handling dynamic data access.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__set" id="___set">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___set">#</a>
+		<code><a href="source-class-Laravel.View.html#364" title="Go to source code">__set</a>( <span> <var>$key</var></span>, <span> <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Magic Method for handling the dynamic setting of data.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Magic Method for handling the dynamic setting of data.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__isset" id="___isset">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___isset">#</a>
+		<code><a href="source-class-Laravel.View.html#372" title="Go to source code">__isset</a>( <span> <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Magic Method for checking dynamically-set data.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Magic Method for checking dynamically-set data.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-Laravel.View.html#380" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the evaluated string content of the view.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the evaluated string content of the view.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="view" id="$view">
+
+		<td class="attributes"><code>
+			
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.View.html#5" title="Go to source code"><var>$view</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$view" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The name of the view.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The name of the view.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="data" id="$data">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.View.html#12" title="Go to source code"><var>$data</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$data" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The view data.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The view data.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="path" id="$path">
+
+		<td class="attributes"><code>
+			
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.View.html#19" title="Go to source code"><var>$path</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$path" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The path to the view on disk.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The path to the view on disk.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="shared" id="$shared">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.View.html#26" title="Go to source code"><var>$shared</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$shared" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All of the shared view data.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All of the shared view data.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="names" id="$names">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.View.html#33" title="Go to source code"><var>$names</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$names" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All of the registered view names.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All of the registered view names.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
