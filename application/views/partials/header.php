@@ -14,7 +14,7 @@
 		<link rel="shortcut icon" href="<?php echo URL::to_asset('img/favicon.png'); ?>">
 
 		<!-- styles -->
-		<link href="<?php echo URL::to_asset('css/style.css') ?>" rel="stylesheet" type="text/css">
+		<link href="<?php echo URL::to_asset('css/style.css') ?>?3" rel="stylesheet" type="text/css">
 
 		<!-- Js for fonts and tracking -->
 		<script type="text/javascript" src="http://use.typekit.com/dlj4kfm.js"></script>
@@ -52,7 +52,7 @@
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">LEARN <b class="caret"></b></a>
 										<ul class="dropdown-menu">
 											<li><a href="<?php echo URL::to('docs'); ?>">DOCUMENTATION</a></li>
-											<li><a href="#">SCREENCASTS</a></li>
+											<li><a href="http://screenr.com/user/laravel">SCREENCASTS</a></li>
 											<li class="divider"></li>
 											<li><a href="http://laravel.com/api">DEVELOPER API</a></li>
 										</ul>

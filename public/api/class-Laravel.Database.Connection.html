@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Database\Connection</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1022895712" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Laravel.Database.Connection.html">Connection</a></li>
+				<li><a href="class-Laravel.Database.Expression.html">Expression</a></li>
+				<li><a href="class-Laravel.Database.Grammar.html">Grammar</a></li>
+				<li><a href="class-Laravel.Database.Query.html">Query</a></li>
+				<li><a href="class-Laravel.Database.Schema.html">Schema</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Laravel.Database.Exception.html">Exception</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.Database.html" title="Summary of Laravel\Database"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Connection</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a>\<a href="namespace-Laravel.Database.html">Database</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Database.Connection.html#3" title="Go to source code">database/connection.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Laravel.Database.Connection.html#33" title="Go to source code">__construct</a>( <span><a href="class-PDO.html">PDO</a> <var>$pdo</var></span>, <span>array <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new database connection instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new database connection instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pdo</var></dt>
+					<dd><code><code><a href="class-PDO.html">PDO</a></code></code></dd>
+					<dt><var>$config</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="table" id="_table">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_table">#</a>
+		<code><a href="source-class-Laravel.Database.Connection.html#46" title="Go to source code">table</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Begin a fluent query against a table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Begin a fluent query against a table.</p>
+
+<pre>
+<span
+class="php-comment">// Start a fluent query against the &quot;users&quot; table</span>
+<span
+class="php-var">$query</span> = DB::connection()-&gt;table(<span
+class="php-quote">'users'</span>);
+
+<span
+class="php-comment">// Start a fluent query against the &quot;users&quot; table and get all the users</span>
+<span
+class="php-var">$users</span> = DB::connection()-&gt;table(<span
+class="php-quote">'users'</span>)-&gt;get();
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="grammar" id="_grammar">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			<code><a href="class-Laravel.Database.Query.Grammars.Grammar.html">Laravel\Database\Query\Grammars\Grammar</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_grammar">#</a>
+		<code><a href="source-class-Laravel.Database.Connection.html#65" title="Go to source code">grammar</a>( )</code>
+
+		<div class="description short">
+			
+<p>Create a new query grammar for the connection.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new query grammar for the connection.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.Grammars.Grammar.html">Laravel\Database\Query\Grammars\Grammar</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="only" id="_only">
+
+		<td class="attributes"><code>
+			
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_only">#</a>
+		<code><a href="source-class-Laravel.Database.Connection.html#87" title="Go to source code">only</a>( <span>string <var>$sql</var></span>, <span>array <var>$bindings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Execute a SQL query against the connection and return a single column
+result.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute a SQL query against the connection and return a single column
+result.</p>
+
+<pre>
+<span
+class="php-comment">// Get the total number of rows on a table</span>
+<span
+class="php-var">$count</span> = DB::connection()-&gt;only(<span
+class="php-quote">'select count(*) from users'</span>);
+
+<span
+class="php-comment">// Get the sum of payment amounts from a table</span>
+<span
+class="php-var">$sum</span> = DB::connection()-&gt;only(<span
+class="php-quote">'select sum(amount) from payments'</span>)
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$bindings</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="first" id="_first">
+
+		<td class="attributes"><code>
+			
+			 public 
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_first">#</a>
+		<code><a href="source-class-Laravel.Database.Connection.html#109" title="Go to source code">first</a>( <span>string <var>$sql</var></span>, <span>array <var>$bindings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Execute a SQL query against the connection and return the first result.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute a SQL query against the connection and return the first result.</p>
+
+<pre>
+<span
+class="php-comment">// Execute a query against the database connection</span>
+<span
+class="php-var">$user</span> = DB::connection()-&gt;first(<span
+class="php-quote">'select * from users'</span>);
+
+<span
+class="php-comment">// Execute a query with bound parameters</span>
+<span
+class="php-var">$user</span> = DB::connection()-&gt;first(<span
+class="php-quote">'select * from users where id = ?'</span>, <span
+class="php-keyword1">array</span>(<span class="php-var">$id</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$bindings</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>object</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="query" id="_query">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_query">#</a>
+		<code><a href="source-class-Laravel.Database.Connection.html#132" title="Go to source code">query</a>( <span>string <var>$sql</var></span>, <span>array <var>$bindings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Execute a SQL query and return an array of StdClass objects.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute a SQL query and return an array of StdClass objects.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$bindings</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-Laravel.Database.Connection.html#161" title="Go to source code">execute</a>( <span>string <var>$sql</var></span>, <span>array <var>$bindings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Execute a SQL query against the connection.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute a SQL query against the connection.</p>
+
+<p>The PDO statement and boolean result will be return in an array.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$bindings</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="log" id="_log">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_log">#</a>
+		<code><a href="source-class-Laravel.Database.Connection.html#216" title="Go to source code">log</a>( <span>string <var>$sql</var></span>, <span>array <var>$bindings</var></span>, <span>integer <var>$start</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Log the query and fire the core query event.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Log the query and fire the core query event.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$bindings</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$start</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="driver" id="_driver">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_driver">#</a>
+		<code><a href="source-class-Laravel.Database.Connection.html#233" title="Go to source code">driver</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the driver name for the database connection.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the driver name for the database connection.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code><a href="source-class-Laravel.Database.Connection.html#243" title="Go to source code">__call</a>( <span> <var>$method</var></span>, <span> <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Magic Method for dynamically beginning queries on database tables.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Magic Method for dynamically beginning queries on database tables.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="pdo" id="$pdo">
+
+		<td class="attributes"><code>
+			
+			public 
+			<code><a href="class-PDO.html">PDO</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Connection.html#5" title="Go to source code"><var>$pdo</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$pdo" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The raw PDO connection instance.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The raw PDO connection instance.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="config" id="$config">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Connection.html#12" title="Go to source code"><var>$config</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$config" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The connection configuration array.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The connection configuration array.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="grammar" id="$grammar">
+
+		<td class="attributes"><code>
+			
+			protected 
+			Grammars\Grammar
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Connection.html#19" title="Go to source code"><var>$grammar</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$grammar" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The query grammar instance for the connection.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The query grammar instance for the connection.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="queries" id="$queries">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Connection.html#26" title="Go to source code"><var>$queries</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$queries" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All of the queries that have been executed on all connections.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All of the queries that have been executed on all connections.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

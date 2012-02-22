@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Paginator</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1022895712" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Asset.html">Asset</a></li>
+				<li><a href="class-Laravel.Asset_Container.html">Asset_Container</a></li>
+				<li><a href="class-Laravel.Auth.html">Auth</a></li>
+				<li><a href="class-Laravel.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-Laravel.Blade.html">Blade</a></li>
+				<li><a href="class-Laravel.Bundle.html">Bundle</a></li>
+				<li><a href="class-Laravel.Cache.html">Cache</a></li>
+				<li><a href="class-Laravel.Config.html">Config</a></li>
+				<li><a href="class-Laravel.Cookie.html">Cookie</a></li>
+				<li><a href="class-Laravel.Crypter.html">Crypter</a></li>
+				<li><a href="class-Laravel.Database.html">Database</a></li>
+				<li><a href="class-Laravel.Error.html">Error</a></li>
+				<li><a href="class-Laravel.Event.html">Event</a></li>
+				<li><a href="class-Laravel.File.html">File</a></li>
+				<li><a href="class-Laravel.Fluent.html">Fluent</a></li>
+				<li><a href="class-Laravel.Form.html">Form</a></li>
+				<li><a href="class-Laravel.Hash.html">Hash</a></li>
+				<li><a href="class-Laravel.HTML.html">HTML</a></li>
+				<li><a href="class-Laravel.Input.html">Input</a></li>
+				<li><a href="class-Laravel.IoC.html">IoC</a></li>
+				<li><a href="class-Laravel.Lang.html">Lang</a></li>
+				<li><a href="class-Laravel.Log.html">Log</a></li>
+				<li><a href="class-Laravel.Memcached.html">Memcached</a></li>
+				<li><a href="class-Laravel.Messages.html">Messages</a></li>
+				<li class="active"><a href="class-Laravel.Paginator.html">Paginator</a></li>
+				<li><a href="class-Laravel.Redirect.html">Redirect</a></li>
+				<li><a href="class-Laravel.Redis.html">Redis</a></li>
+				<li><a href="class-Laravel.Request.html">Request</a></li>
+				<li><a href="class-Laravel.Response.html">Response</a></li>
+				<li><a href="class-Laravel.Section.html">Section</a></li>
+				<li><a href="class-Laravel.Session.html">Session</a></li>
+				<li><a href="class-Laravel.Str.html">Str</a></li>
+				<li><a href="class-Laravel.URI.html">URI</a></li>
+				<li><a href="class-Laravel.URL.html">URL</a></li>
+				<li><a href="class-Laravel.Validator.html">Validator</a></li>
+				<li><a href="class-Laravel.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.html" title="Summary of Laravel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Paginator</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Paginator.html#3" title="Go to source code">paginator.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#70" title="Go to source code">__construct</a>( <span>array <var>$results</var></span>, <span>integer <var>$page</var></span>, <span>integer <var>$total</var></span>, <span>integer <var>$per_page</var></span>, <span>integer <var>$last</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new Paginator instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new Paginator instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$results</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$page</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$total</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$per_page</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$last</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="make" id="_make">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Paginator.html">Laravel\Paginator</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_make">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#89" title="Go to source code">make</a>( <span>array <var>$results</var></span>, <span>integer <var>$total</var></span>, <span>integer <var>$per_page</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new Paginator instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new Paginator instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$results</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$total</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$per_page</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Paginator.html">Laravel\Paginator</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="page" id="_page">
+
+		<td class="attributes"><code>
+			
+			 public static
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_page">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#106" title="Go to source code">page</a>( <span>integer <var>$total</var></span>, <span>integer <var>$per_page</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the current page from the request query string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the current page from the request query string.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$total</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$per_page</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="valid" id="_valid">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_valid">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#129" title="Go to source code">valid</a>( <span>integer <var>$page</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determine if a given page number is a valid page.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine if a given page number is a valid page.</p>
+
+<p>A valid page must be greater than or equal to one and a valid integer.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$page</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="links" id="_links">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_links">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#142" title="Go to source code">links</a>( <span>integer <var>$adjacent</var> = <span class="php-num">3</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Create the HTML pagination links.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create the HTML pagination links.</p>
+
+<p>Typically, an intelligent, "sliding" window of links will be rendered based
+on the total number of pages, the current page, and the number of adjacent pages
+that should rendered. This creates a beautiful paginator similar to that of
+Google's.</p>
+
+<p>Example: 1 2 ... 23 24 25 [26] 27 28 29 ... 51 52</p>
+
+<p>If you wish to render only certain elements of the pagination control,
+explore some of the other public methods available on the instance.</p>
+
+<pre>
+<span class="php-comment">// Render the pagination links</span>
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$paginator</span>-&gt;links();
+
+<span
+class="php-comment">// Render the pagination links using a given window size</span>
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$paginator</span>-&gt;links(<span
+class="php-num">5</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$adjacent</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="slider" id="_slider">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_slider">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#192" title="Go to source code">slider</a>( <span>integer <var>$adjacent</var> = <span class="php-num">3</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Build sliding list of HTML numeric page links.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Build sliding list of HTML numeric page links.</p>
+
+<p>This method is very similar to the "links" method, only it does not render
+the "first" and "last" pagination links, but only the pages.</p>
+
+<pre>
+<span class="php-comment">// Render the pagination slider</span>
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$paginator</span>-&gt;slider();
+
+<span
+class="php-comment">// Render the pagination slider using a given window size</span>
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$paginator</span>-&gt;slider(<span
+class="php-num">5</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$adjacent</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="previous" id="_previous">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_previous">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#238" title="Go to source code">previous</a>( <span>string <var>$text</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generate the "previous" HTML link.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate the "previous" HTML link.</p>
+
+<pre>
+<span
+class="php-comment">// Create the &quot;previous&quot; pagination element</span>
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$paginator</span>-&gt;previous();
+
+<span
+class="php-comment">// Create the &quot;previous&quot; pagination element with custom text</span>
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$paginator</span>-&gt;previous(<span
+class="php-quote">'Go Back'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="next" id="_next">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_next">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#259" title="Go to source code">next</a>( <span>string <var>$text</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generate the "next" HTML link.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate the "next" HTML link.</p>
+
+<pre>
+<span
+class="php-comment">// Create the &quot;next&quot; pagination element</span>
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$paginator</span>-&gt;<span
+class="php-keyword2">next</span>();
+
+<span
+class="php-comment">// Create the &quot;next&quot; pagination element with custom text</span>
+<span
+class="php-keyword1">echo</span> <span
+class="php-var">$paginator</span>-&gt;<span
+class="php-keyword2">next</span>(<span
+class="php-quote">'Skip Forwards'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="element" id="_element">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_element">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#280" title="Go to source code">element</a>( <span>string <var>$element</var></span>, <span>integer <var>$page</var></span>, <span>string <var>$text</var></span>, <span><code><a href="class-Closure.html">Closure</a></code> <var>$disabled</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a chronological pagination element, such as a "previous" or "next"
+link.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a chronological pagination element, such as a "previous" or "next"
+link.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$element</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$page</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$text</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$disabled</var></dt>
+					<dd><code><code><a href="class-Closure.html">Closure</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="beginning" id="_beginning">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_beginning">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#312" title="Go to source code">beginning</a>( )</code>
+
+		<div class="description short">
+			
+<p>Build the first two page links for a sliding page range.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Build the first two page links for a sliding page range.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ending" id="_ending">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ending">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#322" title="Go to source code">ending</a>( )</code>
+
+		<div class="description short">
+			
+<p>Build the last two page links for a sliding page range.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Build the last two page links for a sliding page range.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="range" id="_range">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_range">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#332" title="Go to source code">range</a>( <span>integer <var>$start</var></span>, <span>integer <var>$end</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Build a range of numeric pagination links.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Build a range of numeric pagination links.</p>
+
+<p>For the current page, an HTML span element will be generated instead of a
+link.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$start</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$end</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="link" id="_link">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_link">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#364" title="Go to source code">link</a>( <span>integer <var>$page</var></span>, <span>string <var>$text</var></span>, <span>string <var>$class</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a HTML page link.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a HTML page link.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$page</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$text</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$class</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="appendage" id="_appendage">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_appendage">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#379" title="Go to source code">appendage</a>( <span>array <var>$appends</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create the "appendage" to be attached to every pagination link.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create the "appendage" to be attached to every pagination link.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$appends</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="appends" id="_appends">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Paginator.html">Laravel\Paginator</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_appends">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#400" title="Go to source code">appends</a>( <span>array <var>$values</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the items that should be appended to the link query strings.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the items that should be appended to the link query strings.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Paginator.html">Laravel\Paginator</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="speaks" id="_speaks">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Paginator.html">Laravel\Paginator</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_speaks">#</a>
+		<code><a href="source-class-Laravel.Paginator.html#412" title="Go to source code">speaks</a>( <span>string <var>$language</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the language that should be used when creating the pagination links.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the language that should be used when creating the pagination links.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$language</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Paginator.html">Laravel\Paginator</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="results" id="$results">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Paginator.html#5" title="Go to source code"><var>$results</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$results" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The results for the current page.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The results for the current page.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="page" id="$page">
+
+		<td class="attributes"><code>
+			
+			public 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Paginator.html#12" title="Go to source code"><var>$page</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$page" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The current page.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The current page.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="last" id="$last">
+
+		<td class="attributes"><code>
+			
+			public 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Paginator.html#19" title="Go to source code"><var>$last</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$last" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The last page available for the result set.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The last page available for the result set.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="total" id="$total">
+
+		<td class="attributes"><code>
+			
+			public 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Paginator.html#26" title="Go to source code"><var>$total</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$total" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The total number of results.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The total number of results.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="per_page" id="$per_page">
+
+		<td class="attributes"><code>
+			
+			public 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Paginator.html#33" title="Go to source code"><var>$per_page</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$per_page" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The number of items per page.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The number of items per page.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="appends" id="$appends">
+
+		<td class="attributes"><code>
+			
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Paginator.html#40" title="Go to source code"><var>$appends</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$appends" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The values that should be appended to the end of the link query strings.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The values that should be appended to the end of the link query strings.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="appendage" id="$appendage">
+
+		<td class="attributes"><code>
+			
+			protected 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Paginator.html#47" title="Go to source code"><var>$appendage</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$appendage" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The compiled appendage that will be appended to the links.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The compiled appendage that will be appended to the links.</p>
+
+<p>This consists of a sprintf format with a page place-holder and query
+string.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="language" id="$language">
+
+		<td class="attributes"><code>
+			
+			protected 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Paginator.html#56" title="Go to source code"><var>$language</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$language" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The language that should be used when creating the pagination links.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The language that should be used when creating the pagination links.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="dots" id="$dots">
+
+		<td class="attributes"><code>
+			
+			protected 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Paginator.html#63" title="Go to source code"><var>$dots</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'&lt;span class=&quot;dots&quot;&gt;...&lt;/span&gt;'</span></code></td>
+		<td class="description"><div>
+			<a href="#$dots" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The "dots" element used in the pagination slider.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The "dots" element used in the pagination slider.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

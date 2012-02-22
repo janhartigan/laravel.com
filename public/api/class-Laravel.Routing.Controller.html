@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Routing\Controller</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1022895712" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Laravel.Routing.Controller.html">Controller</a></li>
+				<li><a href="class-Laravel.Routing.Filter.html">Filter</a></li>
+				<li><a href="class-Laravel.Routing.Filter_Collection.html">Filter_Collection</a></li>
+				<li><a href="class-Laravel.Routing.Route.html">Route</a></li>
+				<li><a href="class-Laravel.Routing.Router.html">Router</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.Routing.html" title="Summary of Laravel\Routing"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Controller</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a>\<a href="namespace-Laravel.Routing.html">Routing</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Routing.Controller.html#12" title="Go to source code">routing/controller.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="call" id="_call">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Response.html">Laravel\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_call">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#42" title="Go to source code">call</a>( <span>string <var>$destination</var></span>, <span>array <var>$parameters</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Call an action method on a controller.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Call an action method on a controller.</p>
+
+<pre>
+<span
+class="php-comment">// Call the &quot;show&quot; method on the &quot;user&quot; controller</span>
+<span
+class="php-var">$response</span> = Controller::call(<span
+class="php-quote">'user@show'</span>);
+
+<span
+class="php-comment">// Call the &quot;user/admin&quot; controller and pass parameters</span>
+<span
+class="php-var">$response</span> = Controller::call(<span
+class="php-quote">'user.admin@profile'</span>, <span
+class="php-keyword1">array</span>(<span
+class="php-var">$username</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$destination</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Response.html">Laravel\Response</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="references" id="_references">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_references">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#83" title="Go to source code">references</a>( <span>string <var>&amp; $destination</var></span>, <span>array <var>&amp; $parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all back-references on the given destination.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all back-references on the given destination.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$destination</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resolve" id="_resolve">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Routing.Controller.html">Laravel\Routing\Controller</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resolve">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#107" title="Go to source code">resolve</a>( <span>string <var>$bundle</var></span>, <span>string <var>$controller</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Resolve a bundle and controller name to a controller instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Resolve a bundle and controller name to a controller instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bundle</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$controller</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Routing.Controller.html">Laravel\Routing\Controller</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="load" id="_load">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_load">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#148" title="Go to source code">load</a>( <span>string <var>$bundle</var></span>, <span>string <var>$controller</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Load the file for a given controller.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Load the file for a given controller.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bundle</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$controller</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="format" id="_format">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_format">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#169" title="Go to source code">format</a>( <span>string <var>$bundle</var></span>, <span>string <var>$controller</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Format a bundle and controller identifier into the controller's class
+name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Format a bundle and controller identifier into the controller's class
+name.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bundle</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$controller</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Response.html">Laravel\Response</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#181" title="Go to source code">execute</a>( <span>string <var>$method</var></span>, <span>array <var>$parameters</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Execute a controller method with the given parameters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute a controller method with the given parameters.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Response.html">Laravel\Response</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="response" id="_response">
+
+		<td class="attributes"><code>
+			
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_response">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#216" title="Go to source code">response</a>( <span>string <var>$method</var></span>, <span>array <var>$parameters</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Execute a controller action and return the response.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute a controller action and return the response.</p>
+
+<p>Unlike the "execute" method, no filters will be run and the response from the
+controller action will not be changed in any way before it is returned to the
+consumer.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filter" id="_filter">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			<code><a href="class-Laravel.Routing.Filter_Collection.html">Laravel\Routing\Filter_Collection</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filter">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#254" title="Go to source code">filter</a>( <span>string <var>$event</var></span>, <span>string|array <var>$filters</var></span>, <span>mixed <var>$parameters</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Register filters on the controller's methods.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register filters on the controller's methods.</p>
+
+<pre>
+<span
+class="php-comment">// Set a &quot;foo&quot; after filter on the controller</span>
+<span
+class="php-var">$this</span>-&gt;filter(<span
+class="php-quote">'before'</span>, <span class="php-quote">'foo'</span>);
+
+<span
+class="php-comment">// Set several filters on an explicit group of methods</span>
+<span
+class="php-var">$this</span>-&gt;filter(<span
+class="php-quote">'after'</span>, <span
+class="php-quote">'foo|bar'</span>)-&gt;only(<span
+class="php-keyword1">array</span>(<span class="php-quote">'user'</span>, <span
+class="php-quote">'profile'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$event</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$filters</var></dt>
+					<dd><code>string|array</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Routing.Filter_Collection.html">Laravel\Routing\Filter_Collection</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filters" id="_filters">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filters">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#277" title="Go to source code">filters</a>( <span>string <var>$event</var></span>, <span>string <var>$method</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get an array of filter names defined for the destination.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get an array of filter names defined for the destination.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$event</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="layout" id="_layout">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.View.html">Laravel\View</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_layout">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#301" title="Go to source code">layout</a>( )</code>
+
+		<div class="description short">
+			
+<p>Create the layout that is assigned to the controller.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create the layout that is assigned to the controller.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.View.html">Laravel\View</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="before" id="_before">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_before">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#316" title="Go to source code">before</a>( )</code>
+
+		<div class="description short">
+			
+<p>This function is called before the action is executed.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This function is called before the action is executed.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="after" id="_after">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_after">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#323" title="Go to source code">after</a>( <span><code><a href="class-Laravel.Response.html">Laravel\Response</a></code> <var>$response</var></span> )</code>
+
+		<div class="description short">
+			
+<p>This function is called after the action is executed.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This function is called after the action is executed.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$response</var></dt>
+					<dd><code><code><a href="class-Laravel.Response.html">Laravel\Response</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#331" title="Go to source code">__call</a>( <span> <var>$method</var></span>, <span> <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Magic Method to handle calls to undefined controller functions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Magic Method to handle calls to undefined controller functions.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-Laravel.Routing.Controller.html#339" title="Go to source code">__get</a>( <span> <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Dynamically resolve items from the application IoC container.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Dynamically resolve items from the application IoC container.</p>
+
+<pre>
+<span
+class="php-comment">// Retrieve an object registered in the container</span>
+<span
+class="php-var">$mailer</span> = <span
+class="php-var">$this</span>-&gt;mailer;
+
+<span
+class="php-comment">// Equivalent call using the IoC container instance</span>
+<span
+class="php-var">$mailer</span> = IoC::resolve(<span
+class="php-quote">'mailer'</span>);
+</pre>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="layout" id="$layout">
+
+		<td class="attributes"><code>
+			
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Controller.html#14" title="Go to source code"><var>$layout</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$layout" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The layout being used by the controller.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The layout being used by the controller.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="bundle" id="$bundle">
+
+		<td class="attributes"><code>
+			
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Controller.html#21" title="Go to source code"><var>$bundle</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$bundle" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The bundle the controller belongs to.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The bundle the controller belongs to.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="restful" id="$restful">
+
+		<td class="attributes"><code>
+			
+			public 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Controller.html#28" title="Go to source code"><var>$restful</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$restful" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Indicates if the controller uses RESTful routing.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Indicates if the controller uses RESTful routing.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="filters" id="$filters">
+
+		<td class="attributes"><code>
+			
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Controller.html#35" title="Go to source code"><var>$filters</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$filters" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The filters assigned to the controller.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The filters assigned to the controller.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

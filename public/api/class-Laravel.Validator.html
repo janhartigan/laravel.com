@@ -1,0 +1,2997 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Validator</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1022895712" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Asset.html">Asset</a></li>
+				<li><a href="class-Laravel.Asset_Container.html">Asset_Container</a></li>
+				<li><a href="class-Laravel.Auth.html">Auth</a></li>
+				<li><a href="class-Laravel.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-Laravel.Blade.html">Blade</a></li>
+				<li><a href="class-Laravel.Bundle.html">Bundle</a></li>
+				<li><a href="class-Laravel.Cache.html">Cache</a></li>
+				<li><a href="class-Laravel.Config.html">Config</a></li>
+				<li><a href="class-Laravel.Cookie.html">Cookie</a></li>
+				<li><a href="class-Laravel.Crypter.html">Crypter</a></li>
+				<li><a href="class-Laravel.Database.html">Database</a></li>
+				<li><a href="class-Laravel.Error.html">Error</a></li>
+				<li><a href="class-Laravel.Event.html">Event</a></li>
+				<li><a href="class-Laravel.File.html">File</a></li>
+				<li><a href="class-Laravel.Fluent.html">Fluent</a></li>
+				<li><a href="class-Laravel.Form.html">Form</a></li>
+				<li><a href="class-Laravel.Hash.html">Hash</a></li>
+				<li><a href="class-Laravel.HTML.html">HTML</a></li>
+				<li><a href="class-Laravel.Input.html">Input</a></li>
+				<li><a href="class-Laravel.IoC.html">IoC</a></li>
+				<li><a href="class-Laravel.Lang.html">Lang</a></li>
+				<li><a href="class-Laravel.Log.html">Log</a></li>
+				<li><a href="class-Laravel.Memcached.html">Memcached</a></li>
+				<li><a href="class-Laravel.Messages.html">Messages</a></li>
+				<li><a href="class-Laravel.Paginator.html">Paginator</a></li>
+				<li><a href="class-Laravel.Redirect.html">Redirect</a></li>
+				<li><a href="class-Laravel.Redis.html">Redis</a></li>
+				<li><a href="class-Laravel.Request.html">Request</a></li>
+				<li><a href="class-Laravel.Response.html">Response</a></li>
+				<li><a href="class-Laravel.Section.html">Section</a></li>
+				<li><a href="class-Laravel.Session.html">Session</a></li>
+				<li><a href="class-Laravel.Str.html">Str</a></li>
+				<li><a href="class-Laravel.URI.html">URI</a></li>
+				<li><a href="class-Laravel.URL.html">URL</a></li>
+				<li class="active"><a href="class-Laravel.Validator.html">Validator</a></li>
+				<li><a href="class-Laravel.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.html" title="Summary of Laravel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Validator</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Validator.html#3" title="Go to source code">validator.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Laravel.Validator.html#75" title="Go to source code">__construct</a>( <span>array <var>$attributes</var></span>, <span>array <var>$rules</var></span>, <span>array <var>$messages</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new validator instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new validator instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$rules</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$messages</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="make" id="_make">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Validator.html">Laravel\Validator</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_make">#</a>
+		<code><a href="source-class-Laravel.Validator.html#95" title="Go to source code">make</a>( <span>array <var>$attributes</var></span>, <span>array <var>$rules</var></span>, <span>array <var>$messages</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new validator instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new validator instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$rules</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$messages</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Validator.html">Laravel\Validator</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-Laravel.Validator.html#108" title="Go to source code">register</a>( <span>string <var>$name</var></span>, <span><code><a href="class-Closure.html">Closure</a></code> <var>$validator</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Register a custom validator.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register a custom validator.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$validator</var></dt>
+					<dd><code><code><a href="class-Closure.html">Closure</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="passes" id="_passes">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_passes">#</a>
+		<code><a href="source-class-Laravel.Validator.html#120" title="Go to source code">passes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Validate the target array using the specified validation rules.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the target array using the specified validation rules.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fails" id="_fails">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fails">#</a>
+		<code><a href="source-class-Laravel.Validator.html#130" title="Go to source code">fails</a>( )</code>
+
+		<div class="description short">
+			
+<p>Validate the target array using the specified validation rules.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the target array using the specified validation rules.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="invalid" id="_invalid">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_invalid">#</a>
+		<code><a href="source-class-Laravel.Validator.html#140" title="Go to source code">invalid</a>( )</code>
+
+		<div class="description short">
+			
+<p>Validate the target array using the specified validation rules.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the target array using the specified validation rules.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="valid" id="_valid">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_valid">#</a>
+		<code><a href="source-class-Laravel.Validator.html#150" title="Go to source code">valid</a>( )</code>
+
+		<div class="description short">
+			
+<p>Validate the target array using the specified validation rules.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the target array using the specified validation rules.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="check" id="_check">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_check">#</a>
+		<code><a href="source-class-Laravel.Validator.html#167" title="Go to source code">check</a>( <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Evaluate an attribute against a validation rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Evaluate an attribute against a validation rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validatable" id="_validatable">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validatable">#</a>
+		<code><a href="source-class-Laravel.Validator.html#192" title="Go to source code">validatable</a>( <span>string <var>$rule</var></span>, <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determine if an attribute is validatable.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine if an attribute is validatable.</p>
+
+<p>To be considered validatable, the attribute must either exist, or the rule
+being checked must implicitly validate "required", such as the "required" rule
+or the "accepted" rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="implicit" id="_implicit">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_implicit">#</a>
+		<code><a href="source-class-Laravel.Validator.html#209" title="Go to source code">implicit</a>( <span>string <var>$rule</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determine if a given rule implies that the attribute is required.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine if a given rule implies that the attribute is required.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="error" id="_error">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_error">#</a>
+		<code><a href="source-class-Laravel.Validator.html#220" title="Go to source code">error</a>( <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an error message to the validator's collection of messages.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an error message to the validator's collection of messages.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_required" id="_validate_required">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_required">#</a>
+		<code><a href="source-class-Laravel.Validator.html#235" title="Go to source code">validate_required</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that a required attribute exists in the attributes array.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that a required attribute exists in the attributes array.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_confirmed" id="_validate_confirmed">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_confirmed">#</a>
+		<code><a href="source-class-Laravel.Validator.html#260" title="Go to source code">validate_confirmed</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute has a matching confirmation attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute has a matching confirmation attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_accepted" id="_validate_accepted">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_accepted">#</a>
+		<code><a href="source-class-Laravel.Validator.html#272" title="Go to source code">validate_accepted</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute was "accepted".</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute was "accepted".</p>
+
+<p>This validation rule implies the attribute is "required".</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_same" id="_validate_same">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_same">#</a>
+		<code><a href="source-class-Laravel.Validator.html#286" title="Go to source code">validate_same</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute is the same as another attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute is the same as another attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_different" id="_validate_different">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_different">#</a>
+		<code><a href="source-class-Laravel.Validator.html#301" title="Go to source code">validate_different</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute is different from another attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute is different from another attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_numeric" id="_validate_numeric">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_numeric">#</a>
+		<code><a href="source-class-Laravel.Validator.html#316" title="Go to source code">validate_numeric</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute is numeric.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute is numeric.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_integer" id="_validate_integer">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_integer">#</a>
+		<code><a href="source-class-Laravel.Validator.html#328" title="Go to source code">validate_integer</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute is an integer.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute is an integer.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_size" id="_validate_size">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_size">#</a>
+		<code><a href="source-class-Laravel.Validator.html#340" title="Go to source code">validate_size</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate the size of an attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the size of an attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_between" id="_validate_between">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_between">#</a>
+		<code><a href="source-class-Laravel.Validator.html#353" title="Go to source code">validate_between</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate the size of an attribute is between a set of values.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the size of an attribute is between a set of values.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_min" id="_validate_min">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_min">#</a>
+		<code><a href="source-class-Laravel.Validator.html#368" title="Go to source code">validate_min</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate the size of an attribute is greater than a minimum value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the size of an attribute is greater than a minimum value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_max" id="_validate_max">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_max">#</a>
+		<code><a href="source-class-Laravel.Validator.html#381" title="Go to source code">validate_max</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate the size of an attribute is less than a maximum value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the size of an attribute is less than a maximum value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="size" id="_size">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_size">#</a>
+		<code><a href="source-class-Laravel.Validator.html#394" title="Go to source code">size</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the size of an attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the size of an attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_in" id="_validate_in">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_in">#</a>
+		<code><a href="source-class-Laravel.Validator.html#421" title="Go to source code">validate_in</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate an attribute is contained within a list of values.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate an attribute is contained within a list of values.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_not_in" id="_validate_not_in">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_not_in">#</a>
+		<code><a href="source-class-Laravel.Validator.html#434" title="Go to source code">validate_not_in</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate an attribute is not contained within a list of values.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate an attribute is not contained within a list of values.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_unique" id="_validate_unique">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_unique">#</a>
+		<code><a href="source-class-Laravel.Validator.html#447" title="Go to source code">validate_unique</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate the uniqueness of an attribute value on a given database table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the uniqueness of an attribute value on a given database table.</p>
+
+<p>If a database column is not specified, the attribute will be used.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_exists" id="_validate_exists">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_exists">#</a>
+		<code><a href="source-class-Laravel.Validator.html#482" title="Go to source code">validate_exists</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate the existence of an attribute value in a database table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the existence of an attribute value in a database table.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_ip" id="_validate_ip">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_ip">#</a>
+		<code><a href="source-class-Laravel.Validator.html#516" title="Go to source code">validate_ip</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute is a valid IP.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute is a valid IP.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_email" id="_validate_email">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_email">#</a>
+		<code><a href="source-class-Laravel.Validator.html#528" title="Go to source code">validate_email</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute is a valid e-mail address.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute is a valid e-mail address.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_url" id="_validate_url">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_url">#</a>
+		<code><a href="source-class-Laravel.Validator.html#540" title="Go to source code">validate_url</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute is a valid URL.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute is a valid URL.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_active_url" id="_validate_active_url">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_active_url">#</a>
+		<code><a href="source-class-Laravel.Validator.html#552" title="Go to source code">validate_active_url</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute is an active URL.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute is an active URL.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_image" id="_validate_image">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_image">#</a>
+		<code><a href="source-class-Laravel.Validator.html#566" title="Go to source code">validate_image</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate the MIME type of a file is an image MIME type.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the MIME type of a file is an image MIME type.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_alpha" id="_validate_alpha">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_alpha">#</a>
+		<code><a href="source-class-Laravel.Validator.html#578" title="Go to source code">validate_alpha</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute contains only alphabetic characters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute contains only alphabetic characters.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_alpha_num" id="_validate_alpha_num">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_alpha_num">#</a>
+		<code><a href="source-class-Laravel.Validator.html#590" title="Go to source code">validate_alpha_num</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute contains only alpha-numeric characters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute contains only alpha-numeric characters.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_alpha_dash" id="_validate_alpha_dash">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_alpha_dash">#</a>
+		<code><a href="source-class-Laravel.Validator.html#602" title="Go to source code">validate_alpha_dash</a>( <span>string <var>$attribute</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate that an attribute contains only alpha-numeric characters, dashes,
+and underscores.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate that an attribute contains only alpha-numeric characters, dashes,
+and underscores.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate_mimes" id="_validate_mimes">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate_mimes">#</a>
+		<code><a href="source-class-Laravel.Validator.html#614" title="Go to source code">validate_mimes</a>( <span>string <var>$attribute</var></span>, <span>array <var>$value</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validate the MIME type of a file upload attribute is in a set of MIME
+types.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validate the MIME type of a file upload attribute is in a set of MIME
+types.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="message" id="_message">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_message">#</a>
+		<code><a href="source-class-Laravel.Validator.html#637" title="Go to source code">message</a>( <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the proper error message for an attribute and rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the proper error message for an attribute and rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="size_message" id="_size_message">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_size_message">#</a>
+		<code><a href="source-class-Laravel.Validator.html#689" title="Go to source code">size_message</a>( <span>string <var>$bundle</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the proper error message for an attribute and size rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the proper error message for an attribute and size rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bundle</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace" id="_replace">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace">#</a>
+		<code><a href="source-class-Laravel.Validator.html#721" title="Go to source code">replace</a>( <span>string <var>$message</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all error message place-holders with actual values.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all error message place-holders with actual values.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace_between" id="_replace_between">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace_between">#</a>
+		<code><a href="source-class-Laravel.Validator.html#742" title="Go to source code">replace_between</a>( <span>string <var>$message</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all place-holders for the between rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all place-holders for the between rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace_size" id="_replace_size">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace_size">#</a>
+		<code><a href="source-class-Laravel.Validator.html#756" title="Go to source code">replace_size</a>( <span>string <var>$message</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all place-holders for the size rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all place-holders for the size rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace_min" id="_replace_min">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace_min">#</a>
+		<code><a href="source-class-Laravel.Validator.html#770" title="Go to source code">replace_min</a>( <span>string <var>$message</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all place-holders for the min rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all place-holders for the min rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace_max" id="_replace_max">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace_max">#</a>
+		<code><a href="source-class-Laravel.Validator.html#784" title="Go to source code">replace_max</a>( <span>string <var>$message</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all place-holders for the max rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all place-holders for the max rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace_in" id="_replace_in">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace_in">#</a>
+		<code><a href="source-class-Laravel.Validator.html#798" title="Go to source code">replace_in</a>( <span>string <var>$message</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all place-holders for the in rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all place-holders for the in rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace_not_in" id="_replace_not_in">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace_not_in">#</a>
+		<code><a href="source-class-Laravel.Validator.html#812" title="Go to source code">replace_not_in</a>( <span>string <var>$message</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all place-holders for the not_in rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all place-holders for the not_in rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace_mimes" id="_replace_mimes">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace_mimes">#</a>
+		<code><a href="source-class-Laravel.Validator.html#826" title="Go to source code">replace_mimes</a>( <span>string <var>$message</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all place-holders for the not_in rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all place-holders for the not_in rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace_same" id="_replace_same">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace_same">#</a>
+		<code><a href="source-class-Laravel.Validator.html#840" title="Go to source code">replace_same</a>( <span>string <var>$message</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all place-holders for the same rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all place-holders for the same rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replace_different" id="_replace_different">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replace_different">#</a>
+		<code><a href="source-class-Laravel.Validator.html#854" title="Go to source code">replace_different</a>( <span>string <var>$message</var></span>, <span>string <var>$attribute</var></span>, <span>string <var>$rule</var></span>, <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace all place-holders for the different rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace all place-holders for the different rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$parameters</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="attribute" id="_attribute">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_attribute">#</a>
+		<code><a href="source-class-Laravel.Validator.html#868" title="Go to source code">attribute</a>( <span>string <var>$attribute</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the displayable name for a given attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the displayable name for a given attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="has_rule" id="_has_rule">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_has_rule">#</a>
+		<code><a href="source-class-Laravel.Validator.html#896" title="Go to source code">has_rule</a>( <span>string <var>$attribute</var></span>, <span>array <var>$rules</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Determine if an attribute has a rule assigned to it.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine if an attribute has a rule assigned to it.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$rules</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parse" id="_parse">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parse">#</a>
+		<code><a href="source-class-Laravel.Validator.html#915" title="Go to source code">parse</a>( <span>string <var>$rule</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Extract the rule name and parameters from a rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Extract the rule name and parameters from a rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rule</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="bundle" id="_bundle">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Validator.html">Laravel\Validator</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_bundle">#</a>
+		<code><a href="source-class-Laravel.Validator.html#936" title="Go to source code">bundle</a>( <span>string <var>$bundle</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the bundle that the validator is running for.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the bundle that the validator is running for.</p>
+
+<p>The bundle determines which bundle the language lines will be loaded
+from.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bundle</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Validator.html">Laravel\Validator</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="speaks" id="_speaks">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Validator.html">Laravel\Validator</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_speaks">#</a>
+		<code><a href="source-class-Laravel.Validator.html#950" title="Go to source code">speaks</a>( <span>string <var>$language</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the language that should be used when retrieving error messages.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the language that should be used when retrieving error messages.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$language</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Validator.html">Laravel\Validator</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection" id="_connection">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Validator.html">Laravel\Validator</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connection">#</a>
+		<code><a href="source-class-Laravel.Validator.html#962" title="Go to source code">connection</a>( <span><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a> <var>$connection</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the database connection that should be used by the validator.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the database connection that should be used by the validator.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$connection</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Validator.html">Laravel\Validator</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="db" id="_db">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			<code><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_db">#</a>
+		<code><a href="source-class-Laravel.Validator.html#974" title="Go to source code">db</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the database connection for the Validator.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the database connection for the Validator.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code><a href="source-class-Laravel.Validator.html#986" title="Go to source code">__call</a>( <span> <var>$method</var></span>, <span> <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Dynamically handle calls to custom registered validators.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Dynamically handle calls to custom registered validators.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="attributes" id="$attributes">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Validator.html#5" title="Go to source code"><var>$attributes</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$attributes" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The array being validated.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The array being validated.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="errors" id="$errors">
+
+		<td class="attributes"><code>
+			
+			public 
+			<code><a href="class-Laravel.Messages.html">Laravel\Messages</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Validator.html#12" title="Go to source code"><var>$errors</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$errors" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The post-validation error messages.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The post-validation error messages.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="rules" id="$rules">
+
+		<td class="attributes"><code>
+			
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Validator.html#19" title="Go to source code"><var>$rules</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$rules" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The validation rules.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The validation rules.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="messages" id="$messages">
+
+		<td class="attributes"><code>
+			
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Validator.html#26" title="Go to source code"><var>$messages</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$messages" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The validation messages.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The validation messages.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="db" id="$db">
+
+		<td class="attributes"><code>
+			
+			protected 
+			<code><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Validator.html#33" title="Go to source code"><var>$db</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$db" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The database connection that should be used by the validator.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The database connection that should be used by the validator.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="bundle" id="$bundle">
+
+		<td class="attributes"><code>
+			
+			protected 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Validator.html#40" title="Go to source code"><var>$bundle</var></a>
+		</td>
+		<td class="value"><code>DEFAULT_BUNDLE</code></td>
+		<td class="description"><div>
+			<a href="#$bundle" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The bundle for which the validation is being run.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The bundle for which the validation is being run.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="language" id="$language">
+
+		<td class="attributes"><code>
+			
+			protected 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Validator.html#47" title="Go to source code"><var>$language</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$language" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The language that should be used when retrieving error messages.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The language that should be used when retrieving error messages.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="size_rules" id="$size_rules">
+
+		<td class="attributes"><code>
+			
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Validator.html#54" title="Go to source code"><var>$size_rules</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'size'</span>, <span class="php-quote">'between'</span>, <span class="php-quote">'min'</span>, <span class="php-quote">'max'</span>)</code></td>
+		<td class="description"><div>
+			<a href="#$size_rules" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The size related validation rules.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The size related validation rules.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="numeric_rules" id="$numeric_rules">
+
+		<td class="attributes"><code>
+			
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Validator.html#61" title="Go to source code"><var>$numeric_rules</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'numeric'</span>, <span class="php-quote">'integer'</span>)</code></td>
+		<td class="description"><div>
+			<a href="#$numeric_rules" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The numeric related validation rules.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The numeric related validation rules.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="validators" id="$validators">
+
+		<td class="attributes"><code>
+			
+			protected static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Validator.html#68" title="Go to source code"><var>$validators</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$validators" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The registered custom validators.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The registered custom validators.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

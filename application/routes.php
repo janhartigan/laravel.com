@@ -55,6 +55,12 @@ Route::get('about', function()
 		->nest('footer', 'partials.footer');
 });
 
+Route::get('download', function()
+{
+	Log::write('download', 'Laravel has been downloaded!');
+	return Redirect::to('https://github.com/laravel/laravel/zipball/master');
+});
+
 Route::get('(3)', function()
 {
 	return View::make('pages.three')

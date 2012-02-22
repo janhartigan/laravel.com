@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Asset_Container</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1022895712" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Asset.html">Asset</a></li>
+				<li class="active"><a href="class-Laravel.Asset_Container.html">Asset_Container</a></li>
+				<li><a href="class-Laravel.Auth.html">Auth</a></li>
+				<li><a href="class-Laravel.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-Laravel.Blade.html">Blade</a></li>
+				<li><a href="class-Laravel.Bundle.html">Bundle</a></li>
+				<li><a href="class-Laravel.Cache.html">Cache</a></li>
+				<li><a href="class-Laravel.Config.html">Config</a></li>
+				<li><a href="class-Laravel.Cookie.html">Cookie</a></li>
+				<li><a href="class-Laravel.Crypter.html">Crypter</a></li>
+				<li><a href="class-Laravel.Database.html">Database</a></li>
+				<li><a href="class-Laravel.Error.html">Error</a></li>
+				<li><a href="class-Laravel.Event.html">Event</a></li>
+				<li><a href="class-Laravel.File.html">File</a></li>
+				<li><a href="class-Laravel.Fluent.html">Fluent</a></li>
+				<li><a href="class-Laravel.Form.html">Form</a></li>
+				<li><a href="class-Laravel.Hash.html">Hash</a></li>
+				<li><a href="class-Laravel.HTML.html">HTML</a></li>
+				<li><a href="class-Laravel.Input.html">Input</a></li>
+				<li><a href="class-Laravel.IoC.html">IoC</a></li>
+				<li><a href="class-Laravel.Lang.html">Lang</a></li>
+				<li><a href="class-Laravel.Log.html">Log</a></li>
+				<li><a href="class-Laravel.Memcached.html">Memcached</a></li>
+				<li><a href="class-Laravel.Messages.html">Messages</a></li>
+				<li><a href="class-Laravel.Paginator.html">Paginator</a></li>
+				<li><a href="class-Laravel.Redirect.html">Redirect</a></li>
+				<li><a href="class-Laravel.Redis.html">Redis</a></li>
+				<li><a href="class-Laravel.Request.html">Request</a></li>
+				<li><a href="class-Laravel.Response.html">Response</a></li>
+				<li><a href="class-Laravel.Section.html">Section</a></li>
+				<li><a href="class-Laravel.Session.html">Session</a></li>
+				<li><a href="class-Laravel.Str.html">Str</a></li>
+				<li><a href="class-Laravel.URI.html">URI</a></li>
+				<li><a href="class-Laravel.URL.html">URL</a></li>
+				<li><a href="class-Laravel.Validator.html">Validator</a></li>
+				<li><a href="class-Laravel.View.html">View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.html" title="Summary of Laravel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Asset_Container</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Asset_Container.html#54" title="Go to source code">asset.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#77" title="Go to source code">__construct</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new asset container instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new asset container instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#88" title="Go to source code">add</a>( <span>string <var>$name</var></span>, <span>string <var>$source</var></span>, <span>array <var>$dependencies</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Add an asset to the container.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an asset to the container.</p>
+
+<p>The extension of the asset source will be used to determine the type of asset
+being registered (CSS or JavaScript). When using a non-standard extension, the
+style/script methods may be used to register assets.</p>
+
+<pre>
+<span
+class="php-comment">// Add an asset to the container</span>
+Asset::container()-&gt;add(<span
+class="php-quote">'jquery'</span>, <span
+class="php-quote">'js/jquery.js'</span>);
+
+<span
+class="php-comment">// Add an asset that has dependencies on other assets</span>
+Asset::add(<span
+class="php-quote">'jquery'</span>, <span
+class="php-quote">'js/jquery.js'</span>, <span
+class="php-quote">'jquery-ui'</span>);
+
+<span
+class="php-comment">// Add an asset that should have attributes applied to its tags</span>
+Asset::add(<span
+class="php-quote">'jquery'</span>, <span
+class="php-quote">'js/jquery.js'</span>, <span
+class="php-keyword1">null</span>, <span class="php-keyword1">array</span>(<span
+class="php-quote">'defer'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$source</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$dependencies</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="style" id="_style">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Asset_Container.html">Laravel\Asset_Container</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_style">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#119" title="Go to source code">style</a>( <span>string <var>$name</var></span>, <span>string <var>$source</var></span>, <span>array <var>$dependencies</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Add a CSS file to the registered assets.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a CSS file to the registered assets.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$source</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$dependencies</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Asset_Container.html">Laravel\Asset_Container</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="script" id="_script">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Asset_Container.html">Laravel\Asset_Container</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_script">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#140" title="Go to source code">script</a>( <span>string <var>$name</var></span>, <span>string <var>$source</var></span>, <span>array <var>$dependencies</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Add a JavaScript file to the registered assets.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a JavaScript file to the registered assets.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$source</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$dependencies</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Asset_Container.html">Laravel\Asset_Container</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="path" id="_path">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_path">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#156" title="Go to source code">path</a>( <span>string <var>$source</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns the full-path for an asset.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the full-path for an asset.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$source</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="bundle" id="_bundle">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Asset_Container.html">Laravel\Asset_Container</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_bundle">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#167" title="Go to source code">bundle</a>( <span>string <var>$bundle</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the bundle that the container's assets belong to.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the bundle that the container's assets belong to.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bundle</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Asset_Container.html">Laravel\Asset_Container</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#179" title="Go to source code">register</a>( <span>string <var>$type</var></span>, <span>string <var>$name</var></span>, <span>string <var>$source</var></span>, <span>array <var>$dependencies</var></span>, <span>array <var>$attributes</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an asset to the array of registered assets.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an asset to the array of registered assets.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$source</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$dependencies</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="styles" id="_styles">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_styles">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#198" title="Go to source code">styles</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the links to all of the registered CSS assets.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the links to all of the registered CSS assets.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="scripts" id="_scripts">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_scripts">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#208" title="Go to source code">scripts</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the links to all of the registered JavaScript assets.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the links to all of the registered JavaScript assets.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="group" id="_group">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_group">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#218" title="Go to source code">group</a>( <span>string <var>$group</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get all of the registered assets for a given type / group.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get all of the registered assets for a given type / group.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$group</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="asset" id="_asset">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_asset">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#238" title="Go to source code">asset</a>( <span>string <var>$group</var></span>, <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the HTML link to a registered asset.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the HTML link to a registered asset.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$group</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="arrange" id="_arrange">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_arrange">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#262" title="Go to source code">arrange</a>( <span>array <var>$assets</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sort and retrieve assets based on their dependencies</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sort and retrieve assets based on their dependencies</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$assets</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="evaluate_asset" id="_evaluate_asset">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_evaluate_asset">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#283" title="Go to source code">evaluate_asset</a>( <span>string <var>$asset</var></span>, <span>string <var>$value</var></span>, <span>array <var>$original</var></span>, <span>array <var>&amp; $sorted</var></span>, <span>array <var>&amp; $assets</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Evaluate an asset and its dependencies.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Evaluate an asset and its dependencies.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$asset</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$original</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$sorted</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$assets</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dependency_is_valid" id="_dependency_is_valid">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dependency_is_valid">#</a>
+		<code><a href="source-class-Laravel.Asset_Container.html#325" title="Go to source code">dependency_is_valid</a>( <span>string <var>$asset</var></span>, <span>string <var>$dependency</var></span>, <span>array <var>$original</var></span>, <span>array <var>$assets</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Verify that an asset's dependency is valid.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Verify that an asset's dependency is valid.</p>
+
+<p>A dependency is considered valid if it exists, is not a circular reference,
+and is not a reference to the owning asset itself. If the dependency doesn't
+exist, no error or warning will be given. For the other cases, an exception is
+thrown.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$asset</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$dependency</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$original</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$assets</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="name" id="$name">
+
+		<td class="attributes"><code>
+			
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Asset_Container.html#56" title="Go to source code"><var>$name</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$name" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The asset container name.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The asset container name.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="bundle" id="$bundle">
+
+		<td class="attributes"><code>
+			
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Asset_Container.html#63" title="Go to source code"><var>$bundle</var></a>
+		</td>
+		<td class="value"><code>DEFAULT_BUNDLE</code></td>
+		<td class="description"><div>
+			<a href="#$bundle" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The bundle that the assets belong to.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The bundle that the assets belong to.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="assets" id="$assets">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Asset_Container.html#70" title="Go to source code"><var>$assets</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$assets" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All of the registered assets.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All of the registered assets.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Database\Query</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1022895712" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Database.Connection.html">Connection</a></li>
+				<li><a href="class-Laravel.Database.Expression.html">Expression</a></li>
+				<li><a href="class-Laravel.Database.Grammar.html">Grammar</a></li>
+				<li class="active"><a href="class-Laravel.Database.Query.html">Query</a></li>
+				<li><a href="class-Laravel.Database.Schema.html">Schema</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Laravel.Database.Exception.html">Exception</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.Database.html" title="Summary of Laravel\Database"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Query</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a>\<a href="namespace-Laravel.Database.html">Database</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Database.Query.html#8" title="Go to source code">database/query.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#101" title="Go to source code">__construct</a>( <span><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a> <var>$connection</var></span>, <span><a href="class-Laravel.Database.Query.Grammars.Grammar.html">Laravel\Database\Query\Grammars\Grammar</a> <var>$grammar</var></span>, <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new query instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new query instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$connection</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a></code></code></dd>
+					<dt><var>$grammar</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Grammar.html">Laravel\Database\Grammar</a></code></code></dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="distinct" id="_distinct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_distinct">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#116" title="Go to source code">distinct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Force the query to return distinct results.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Force the query to return distinct results.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select" id="_select">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#127" title="Go to source code">select</a>( <span>array <var>$columns</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'*'</span>)</span> )</code>
+
+		<div class="description short">
+			
+<p>Add an array of columns to the SELECT clause.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an array of columns to the SELECT clause.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="join" id="_join">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_join">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#139" title="Go to source code">join</a>( <span>string <var>$table</var></span>, <span>string <var>$column1</var></span>, <span>string <var>$operator</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$column2</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$type</var> = <span class="php-quote">'INNER'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a join clause to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a join clause to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$column1</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$operator</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$column2</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="left_join" id="_left_join">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_left_join">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#176" title="Go to source code">left_join</a>( <span>string <var>$table</var></span>, <span>string <var>$column1</var></span>, <span>string <var>$operator</var></span>, <span>string <var>$column2</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a left join to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a left join to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$column1</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$operator</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$column2</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="reset_where" id="_reset_where">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_reset_where">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#190" title="Go to source code">reset_where</a>( )</code>
+
+		<div class="description short">
+			
+<p>Reset the where clause to its initial state.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Reset the where clause to its initial state.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="raw_where" id="_raw_where">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_raw_where">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#200" title="Go to source code">raw_where</a>( <span>string <var>$where</var></span>, <span>array <var>$bindings</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$connector</var> = <span class="php-quote">'AND'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a raw where condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a raw where condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$bindings</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$connector</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="raw_or_where" id="_raw_or_where">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_raw_or_where">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#217" title="Go to source code">raw_or_where</a>( <span>string <var>$where</var></span>, <span>array <var>$bindings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Add a raw or where condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a raw or where condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$bindings</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where" id="_where">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#229" title="Go to source code">where</a>( <span>string <var>$column</var></span>, <span>string <var>$operator</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$connector</var> = <span class="php-quote">'AND'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a where condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a where condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$operator</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$connector</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="or_where" id="_or_where">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_or_where">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#257" title="Go to source code">or_where</a>( <span>string <var>$column</var></span>, <span>string <var>$operator</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$value</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an or where condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an or where condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$operator</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="or_where_id" id="_or_where_id">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_or_where_id">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#270" title="Go to source code">or_where_id</a>( <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an or where condition for the primary key to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an or where condition for the primary key to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_in" id="_where_in">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_in">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#281" title="Go to source code">where_in</a>( <span>string <var>$column</var></span>, <span>array <var>$values</var></span>, <span>string <var>$connector</var> = <span class="php-quote">'AND'</span></span>, <span>boolean <var>$not</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a where in condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a where in condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$connector</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$not</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="or_where_in" id="_or_where_in">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_or_where_in">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#301" title="Go to source code">or_where_in</a>( <span>string <var>$column</var></span>, <span>array <var>$values</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an or where in condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an or where in condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_not_in" id="_where_not_in">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_not_in">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#313" title="Go to source code">where_not_in</a>( <span>string <var>$column</var></span>, <span>array <var>$values</var></span>, <span>string <var>$connector</var> = <span class="php-quote">'AND'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a where not in condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a where not in condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$connector</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="or_where_not_in" id="_or_where_not_in">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_or_where_not_in">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#326" title="Go to source code">or_where_not_in</a>( <span>string <var>$column</var></span>, <span>array <var>$values</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an or where not in condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an or where not in condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_null" id="_where_null">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_null">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#338" title="Go to source code">where_null</a>( <span>string <var>$column</var></span>, <span>string <var>$connector</var> = <span class="php-quote">'AND'</span></span>, <span>boolean <var>$not</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a where null condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a where null condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$connector</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$not</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="or_where_null" id="_or_where_null">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_or_where_null">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#355" title="Go to source code">or_where_null</a>( <span>string <var>$column</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an or where null condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an or where null condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_not_null" id="_where_not_null">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_not_null">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#366" title="Go to source code">where_not_null</a>( <span>string <var>$column</var></span>, <span>string <var>$connector</var> = <span class="php-quote">'AND'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a where not null condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a where not null condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$connector</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="or_where_not_null" id="_or_where_not_null">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_or_where_not_null">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#378" title="Go to source code">or_where_not_null</a>( <span>string <var>$column</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an or where not null condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an or where not null condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where_nested" id="_where_nested">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where_nested">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#389" title="Go to source code">where_nested</a>( <span><code><a href="class-Closure.html">Closure</a></code> <var>$callback</var></span>, <span>string <var>$connector</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a nested where condition to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a nested where condition to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$callback</var></dt>
+					<dd><code><code><a href="class-Closure.html">Closure</a></code></code></dd>
+					<dt><var>$connector</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="group_by" id="_group_by">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_group_by">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#467" title="Go to source code">group_by</a>( <span>string <var>$column</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a grouping to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a grouping to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="order_by" id="_order_by">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_order_by">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#479" title="Go to source code">order_by</a>( <span>string <var>$column</var></span>, <span>string <var>$direction</var> = <span class="php-quote">'asc'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an ordering to the query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an ordering to the query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$direction</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="skip" id="_skip">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_skip">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#492" title="Go to source code">skip</a>( <span>integer <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the query offset.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the query offset.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="take" id="_take">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_take">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#504" title="Go to source code">take</a>( <span>integer <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the query limit.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the query limit.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="for_page" id="_for_page">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_for_page">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#516" title="Go to source code">for_page</a>( <span>integer <var>$page</var></span>, <span>integer <var>$per_page</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the query limit and offset for a given page.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the query limit and offset for a given page.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$page</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$per_page</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Database.Query.html">Laravel\Database\Query</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="find" id="_find">
+
+		<td class="attributes"><code>
+			
+			 public 
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_find">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#528" title="Go to source code">find</a>( <span>integer <var>$id</var></span>, <span>array <var>$columns</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'*'</span>)</span> )</code>
+
+		<div class="description short">
+			
+<p>Find a record by the primary key.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Find a record by the primary key.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>object</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="only" id="_only">
+
+		<td class="attributes"><code>
+			
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_only">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#540" title="Go to source code">only</a>( <span>string <var>$column</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Execute the query as a SELECT statement and return a single column.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute the query as a SELECT statement and return a single column.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="first" id="_first">
+
+		<td class="attributes"><code>
+			
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_first">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#553" title="Go to source code">first</a>( <span>array <var>$columns</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'*'</span>)</span> )</code>
+
+		<div class="description short">
+			
+<p>Execute the query as a SELECT statement and return the first result.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute the query as a SELECT statement and return the first result.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lists" id="_lists">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lists">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#571" title="Go to source code">lists</a>( <span>string <var>$column</var></span>, <span>string <var>$key</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get an array with the values of a given column.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get an array with the values of a given column.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#610" title="Go to source code">get</a>( <span>array <var>$columns</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'*'</span>)</span> )</code>
+
+		<div class="description short">
+			
+<p>Execute the query as a SELECT statement.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute the query as a SELECT statement.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="aggregate" id="_aggregate">
+
+		<td class="attributes"><code>
+			
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_aggregate">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#643" title="Go to source code">aggregate</a>( <span>string <var>$aggregator</var></span>, <span>array <var>$columns</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get an aggregate value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get an aggregate value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$aggregator</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="paginate" id="_paginate">
+
+		<td class="attributes"><code>
+			
+			 public 
+			<code><a href="class-Laravel.Paginator.html">Laravel\Paginator</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_paginate">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#669" title="Go to source code">paginate</a>( <span>integer <var>$per_page</var> = <span class="php-num">20</span></span>, <span>array <var>$columns</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'*'</span>)</span> )</code>
+
+		<div class="description short">
+			
+<p>Get the paginated query results as a Paginator instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the paginated query results as a Paginator instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$per_page</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Paginator.html">Laravel\Paginator</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#697" title="Go to source code">insert</a>( <span>array <var>$values</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Insert an array of values into the database table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Insert an array of values into the database table.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert_get_id" id="_insert_get_id">
+
+		<td class="attributes"><code>
+			
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert_get_id">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#725" title="Go to source code">insert_get_id</a>( <span>array <var>$values</var></span>, <span>string <var>$sequence</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Insert an array of values into the database table and return the ID.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Insert an array of values into the database table and return the ID.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$sequence</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="increment" id="_increment">
+
+		<td class="attributes"><code>
+			
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_increment">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#744" title="Go to source code">increment</a>( <span>string <var>$column</var></span>, <span>integer <var>$amount</var> = <span class="php-num">1</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Increment the value of a column by a given amount.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Increment the value of a column by a given amount.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$amount</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="decrement" id="_decrement">
+
+		<td class="attributes"><code>
+			
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_decrement">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#756" title="Go to source code">decrement</a>( <span>string <var>$column</var></span>, <span>integer <var>$amount</var> = <span class="php-num">1</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Decrement the value of a column by a given amount.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Decrement the value of a column by a given amount.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$amount</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="adjust" id="_adjust">
+
+		<td class="attributes"><code>
+			
+			 protected 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_adjust">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#768" title="Go to source code">adjust</a>( <span>string <var>$column</var></span>, <span>integer <var>$amount</var></span>, <span>string <var>$operator</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adjust the value of a column up or down by a given amount.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adjust the value of a column up or down by a given amount.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$amount</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$operator</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#788" title="Go to source code">update</a>( <span>array <var>$values</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Update an array of values in the database table.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update an array of values in the database table.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#807" title="Go to source code">delete</a>( <span>integer <var>$id</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Execute the query as a DELETE statement.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute the query as a DELETE statement.</p>
+
+<p>Optionally, an ID may be passed to the method do delete a specific row.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code><a href="source-class-Laravel.Database.Query.html#830" title="Go to source code">__call</a>( <span> <var>$method</var></span>, <span> <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Magic Method for handling dynamic functions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Magic Method for handling dynamic functions.</p>
+
+<p>This method handles calls to aggregates as well as dynamic where clauses.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="connection" id="$connection">
+
+		<td class="attributes"><code>
+			
+			public 
+			<code><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#10" title="Go to source code"><var>$connection</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$connection" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The database connection.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The database connection.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="grammar" id="$grammar">
+
+		<td class="attributes"><code>
+			
+			public 
+			<code><a href="class-Laravel.Database.Query.Grammars.Grammar.html">Laravel\Database\Query\Grammars\Grammar</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#17" title="Go to source code"><var>$grammar</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$grammar" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The query grammar instance.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The query grammar instance.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="selects" id="$selects">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#24" title="Go to source code"><var>$selects</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$selects" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The SELECT clause.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The SELECT clause.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="aggregate" id="$aggregate">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#31" title="Go to source code"><var>$aggregate</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$aggregate" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The aggregating column and function.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The aggregating column and function.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="distinct" id="$distinct">
+
+		<td class="attributes"><code>
+			
+			public 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#38" title="Go to source code"><var>$distinct</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$distinct" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Indicates if the query should return distinct results.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Indicates if the query should return distinct results.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="from" id="$from">
+
+		<td class="attributes"><code>
+			
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#45" title="Go to source code"><var>$from</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$from" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The table name.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The table name.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="joins" id="$joins">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#52" title="Go to source code"><var>$joins</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$joins" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The table joins.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The table joins.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="wheres" id="$wheres">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#59" title="Go to source code"><var>$wheres</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$wheres" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The WHERE clauses.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The WHERE clauses.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="groupings" id="$groupings">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#66" title="Go to source code"><var>$groupings</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$groupings" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The GROUP BY clauses.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The GROUP BY clauses.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="orderings" id="$orderings">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#73" title="Go to source code"><var>$orderings</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$orderings" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The ORDER BY clauses.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The ORDER BY clauses.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="limit" id="$limit">
+
+		<td class="attributes"><code>
+			
+			public 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#80" title="Go to source code"><var>$limit</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$limit" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The LIMIT value.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The LIMIT value.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="offset" id="$offset">
+
+		<td class="attributes"><code>
+			
+			public 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#87" title="Go to source code"><var>$offset</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$offset" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The OFFSET value.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The OFFSET value.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="bindings" id="$bindings">
+
+		<td class="attributes"><code>
+			
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Query.html#94" title="Go to source code"><var>$bindings</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$bindings" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The query value bindings.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The query value bindings.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

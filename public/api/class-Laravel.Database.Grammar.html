@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Database\Grammar</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1022895712" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Database.Connection.html">Connection</a></li>
+				<li><a href="class-Laravel.Database.Expression.html">Expression</a></li>
+				<li class="active"><a href="class-Laravel.Database.Grammar.html">Grammar</a></li>
+				<li><a href="class-Laravel.Database.Query.html">Query</a></li>
+				<li><a href="class-Laravel.Database.Schema.html">Schema</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Laravel.Database.Exception.html">Exception</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.Database.html" title="Summary of Laravel\Database"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Grammar</h1>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Laravel.Database.Query.Grammars.Grammar.html">Laravel\Database\Query\Grammars\Grammar</a>, 
+			<a href="class-Laravel.Database.Schema.Grammars.Grammar.html">Laravel\Database\Schema\Grammars\Grammar</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-Laravel.Database.Query.Grammars.MySQL.html">Laravel\Database\Query\Grammars\MySQL</a>, 
+			<a href="class-Laravel.Database.Query.Grammars.SQLServer.html">Laravel\Database\Query\Grammars\SQLServer</a>, 
+			<a href="class-Laravel.Database.Schema.Grammars.MySQL.html">Laravel\Database\Schema\Grammars\MySQL</a>, 
+			<a href="class-Laravel.Database.Schema.Grammars.Postgres.html">Laravel\Database\Schema\Grammars\Postgres</a>, 
+			<a href="class-Laravel.Database.Schema.Grammars.SQLite.html">Laravel\Database\Schema\Grammars\SQLite</a>, 
+			<a href="class-Laravel.Database.Schema.Grammars.SQLServer.html">Laravel\Database\Schema\Grammars\SQLServer</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a>\<a href="namespace-Laravel.Database.html">Database</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Database.Grammar.html#3" title="Go to source code">database/grammar.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Laravel.Database.Grammar.html#19" title="Go to source code">__construct</a>( <span><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a> <var>$connection</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a new database grammar instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a new database grammar instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$connection</var></dt>
+					<dd><code><code><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="wrap_table" id="_wrap_table">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_wrap_table">#</a>
+		<code><a href="source-class-Laravel.Database.Grammar.html#30" title="Go to source code">wrap_table</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Wrap a table in keyword identifiers.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wrap a table in keyword identifiers.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="wrap" id="_wrap">
+
+		<td class="attributes"><code>
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_wrap">#</a>
+		<code><a href="source-class-Laravel.Database.Grammar.html#51" title="Go to source code">wrap</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Wrap a value in keyword identifiers.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Wrap a value in keyword identifiers.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parameterize" id="_parameterize">
+
+		<td class="attributes"><code>
+			
+			final public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parameterize">#</a>
+		<code><a href="source-class-Laravel.Database.Grammar.html#99" title="Go to source code">parameterize</a>( <span>array <var>$values</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create query parameters from an array of values.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create query parameters from an array of values.</p>
+
+<pre>
+Returns <span
+class="php-quote">&quot;?, ?, ?&quot;</span>, which may be used <span
+class="php-keyword1">as</span> PDO place-holders
+<span
+class="php-var">$parameters</span> = <span
+class="php-var">$grammar</span>-&gt;parameterize(<span
+class="php-keyword1">array</span>(<span class="php-num">1</span>, <span
+class="php-num">2</span>, <span class="php-num">3</span>));
+
+<span
+class="php-comment">// Returns &quot;?, &quot;Taylor&quot;&quot; since an expression is used</span>
+<span
+class="php-var">$parameters</span> = <span
+class="php-var">$grammar</span>-&gt;parameterize(<span
+class="php-keyword1">array</span>(<span class="php-num">1</span>, DB::raw(<span
+class="php-quote">'Taylor'</span>)));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parameter" id="_parameter">
+
+		<td class="attributes"><code>
+			
+			final public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parameter">#</a>
+		<code><a href="source-class-Laravel.Database.Grammar.html#118" title="Go to source code">parameter</a>( <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the appropriate query parameter string for a value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the appropriate query parameter string for a value.</p>
+
+<pre>
+<span
+class="php-comment">// Returns a &quot;?&quot; PDO place-holder</span>
+<span
+class="php-var">$value</span> = <span
+class="php-var">$grammar</span>-&gt;parameter(<span
+class="php-quote">'Taylor Otwell'</span>);
+
+<span
+class="php-comment">// Returns &quot;Taylor Otwell&quot; as the raw value of the expression</span>
+<span
+class="php-var">$value</span> = <span
+class="php-var">$grammar</span>-&gt;parameter(DB::raw(<span
+class="php-quote">'Taylor Otwell'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="columnize" id="_columnize">
+
+		<td class="attributes"><code>
+			
+			final public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_columnize">#</a>
+		<code><a href="source-class-Laravel.Database.Grammar.html#137" title="Go to source code">columnize</a>( <span>array <var>$columns</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a comma-delimited list of wrapped column names.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a comma-delimited list of wrapped column names.</p>
+
+<pre>
+<span
+class="php-comment">// Returns &quot;&quot;Taylor&quot;, &quot;Otwell&quot;&quot; when the identifier is quotes</span>
+<span
+class="php-var">$columns</span> = <span
+class="php-var">$grammar</span>-&gt;columnize(<span
+class="php-keyword1">array</span>(<span class="php-quote">'Taylor'</span>, <span
+class="php-quote">'Otwell'</span>));
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$columns</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="wrapper" id="$wrapper">
+
+		<td class="attributes"><code>
+			
+			protected 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Grammar.html#5" title="Go to source code"><var>$wrapper</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'&quot;%s&quot;'</span></code></td>
+		<td class="description"><div>
+			<a href="#$wrapper" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The keyword identifier for the database system.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The keyword identifier for the database system.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="connection" id="$connection">
+
+		<td class="attributes"><code>
+			
+			protected 
+			<code><a href="class-Laravel.Database.Connection.html">Laravel\Database\Connection</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Database.Grammar.html#12" title="Go to source code"><var>$connection</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$connection" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The database connection instance for the grammar.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The database connection instance for the grammar.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

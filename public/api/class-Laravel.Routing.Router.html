@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.5.0" />
+
+	<title>Class Laravel\Routing\Router</title>
+
+	<script type="text/javascript" src="resources/combined.js?2162224609"></script>
+	<script type="text/javascript" src="elementlist.js?3519551823"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1022895712" />
+
+</head>
+
+<body>
+<div class="laravel-header">
+	<img src="http://beta.laravel.com/img/laravel.png" alt="" />
+</div>
+<div class="col-container">
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active main"><a href="namespace-Laravel.html">Laravel</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.html">Cache</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Cache.Drivers.html">Drivers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.html">CLI</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.html">Tasks</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.html">Bundle</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Bundle.Providers.html">Providers</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Migrate.html">Migrate</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Session.html">Session</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.CLI.Tasks.Test.html">Test</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.html">Database</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Connectors.html">Connectors</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Database.Query.html">Query</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Query.Grammars.html">Grammars</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.html">Schema</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Database.Schema.Grammars.html">Grammars</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active main"><a href="namespace-Laravel.Routing.html">Routing</a>
+						</li>
+				<li class="main"><a href="namespace-Laravel.Session.html">Session</a>
+						<span></span>
+						<ul>
+				<li class="main"><a href="namespace-Laravel.Session.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravel.Routing.Controller.html">Controller</a></li>
+				<li><a href="class-Laravel.Routing.Filter.html">Filter</a></li>
+				<li><a href="class-Laravel.Routing.Filter_Collection.html">Filter_Collection</a></li>
+				<li><a href="class-Laravel.Routing.Route.html">Route</a></li>
+				<li class="active"><a href="class-Laravel.Routing.Router.html">Router</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravel.Routing.html" title="Summary of Laravel\Routing"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Router</h1>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravel.html">Laravel</a>\<a href="namespace-Laravel.Routing.html">Routing</a><br />
+
+		<b>Located at</b> <a href="source-class-Laravel.Routing.Router.html#8" title="Go to source code">routing/router.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="secure" id="_secure">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_secure">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#86" title="Go to source code">secure</a>( <span>string <var>$method</var></span>, <span>string|array <var>$route</var></span>, <span>mixed <var>$action</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Register a HTTPS route with the router.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register a HTTPS route with the router.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$route</var></dt>
+					<dd><code>string|array</code></dd>
+					<dt><var>$action</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="share" id="_share">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_share">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#103" title="Go to source code">share</a>( <span>array <var>$routes</var></span>, <span>mixed <var>$action</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Register many request URIs to a single action.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register many request URIs to a single action.</p>
+
+<pre>
+<span
+class="php-comment">// Register a group of URIs for an action</span>
+Router::share(<span
+class="php-keyword1">array</span>(<span class="php-quote">'GET'</span>, <span
+class="php-quote">'/'</span>), <span class="php-keyword1">array</span>(<span
+class="php-quote">'POST'</span>, <span class="php-quote">'/'</span>), <span
+class="php-quote">'home@index'</span>);
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$routes</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$action</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="group" id="_group">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_group">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#123" title="Go to source code">group</a>( <span>array <var>$attributes</var></span>, <span><a href="class-Closure.html">Closure</a> <var>$callback</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Register a group of routes that share attributes.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register a group of routes that share attributes.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attributes</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$callback</var></dt>
+					<dd><code><code><a href="class-Closure.html">Closure</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#145" title="Go to source code">register</a>( <span>string <var>$method</var></span>, <span>string|array <var>$route</var></span>, <span>mixed <var>$action</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Register a route with the router.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register a route with the router.</p>
+
+<pre>
+<span
+class="php-comment">// Register a route with the router</span>
+Router::register(<span
+class="php-quote">'GET'</span> ,<span class="php-quote">'/'</span>, <span
+class="php-keyword1">function</span>() {<span
+class="php-keyword1">return</span> <span
+class="php-quote">'Home!'</span>;});
+
+<span
+class="php-comment">// Register a route that handles multiple URIs with the router</span>
+Router::register(<span
+class="php-keyword1">array</span>(<span class="php-quote">'GET'</span>, <span
+class="php-quote">'/'</span>, <span class="php-quote">'GET /home'</span>), <span
+class="php-keyword1">function</span>() {<span
+class="php-keyword1">return</span> <span
+class="php-quote">'Home!'</span>;});
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$route</var></dt>
+					<dd><code>string|array</code></dd>
+					<dt><var>$action</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="action" id="_action">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_action">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#225" title="Go to source code">action</a>( <span>mixed <var>$action</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Convert a route action to a valid action array.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Convert a route action to a valid action array.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="secure_controller" id="_secure_controller">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_secure_controller">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#251" title="Go to source code">secure_controller</a>( <span>string|array <var>$controllers</var></span>, <span>string|array <var>$defaults</var> = <span class="php-quote">'index'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Register a secure controller with the router.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register a secure controller with the router.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$controllers</var></dt>
+					<dd><code>string|array</code></dd>
+					<dt><var>$defaults</var></dt>
+					<dd><code>string|array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="controller" id="_controller">
+
+		<td class="attributes"><code>
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_controller">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#263" title="Go to source code">controller</a>( <span>string|array <var>$controllers</var></span>, <span>string|array <var>$defaults</var> = <span class="php-quote">'index'</span></span>, <span>boolean <var>$https</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Register a controller with the router.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register a controller with the router.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$controllers</var></dt>
+					<dd><code>string|array</code><br>$controller</dd>
+					<dt><var>$defaults</var></dt>
+					<dd><code>string|array</code></dd>
+					<dt><var>$https</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="root" id="_root">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_root">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#314" title="Go to source code">root</a>( <span>string <var>$identifier</var></span>, <span>string <var>$controller</var></span>, <span>string <var>$root</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Register a route for the root of a controller.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Register a route for the root of a controller.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$identifier</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$controller</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$root</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="find" id="_find">
+
+		<td class="attributes"><code>
+			
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_find">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#346" title="Go to source code">find</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Find a route by the route's assigned name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Find a route by the route's assigned name.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="uses" id="_uses">
+
+		<td class="attributes"><code>
+			
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_uses">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#382" title="Go to source code">uses</a>( <span>string <var>$action</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Find the route that uses the given action.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Find the route that uses the given action.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$action</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="route" id="_route">
+
+		<td class="attributes"><code>
+			
+			 public static
+			<code><a href="class-Laravel.Routing.Route.html">Laravel\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_route">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#415" title="Go to source code">route</a>( <span>string <var>$method</var></span>, <span>string <var>$uri</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Search the routes for the route matching a method and URI.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Search the routes for the route matching a method and URI.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$uri</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Routing.Route.html">Laravel\Routing\Route</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="match" id="_match">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			<code><a href="class-Laravel.Routing.Route.html">Laravel\Routing\Route</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_match">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#447" title="Go to source code">match</a>( <span>string <var>$method</var></span>, <span>string <var>$uri</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Iterate through every route to find a matching route.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Iterate through every route to find a matching route.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$uri</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravel.Routing.Route.html">Laravel\Routing\Route</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="wildcards" id="_wildcards">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_wildcards">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#476" title="Go to source code">wildcards</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Translate route URI wildcards into regular expressions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Translate route URI wildcards into regular expressions.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="routes" id="_routes">
+
+		<td class="attributes"><code>
+			
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_routes">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#499" title="Go to source code">routes</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get all of the registered routes, with fallbacks at the end.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get all of the registered routes, with fallbacks at the end.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="method" id="_method">
+
+		<td class="attributes"><code>
+			
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_method">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#526" title="Go to source code">method</a>( <span>string <var>$method</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Grab all of the routes for a given request method.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Grab all of the routes for a given request method.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="patterns" id="_patterns">
+
+		<td class="attributes"><code>
+			
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_patterns">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#539" title="Go to source code">patterns</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get all of the wildcard patterns</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get all of the wildcard patterns</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="repeat" id="_repeat">
+
+		<td class="attributes"><code>
+			
+			 protected static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_repeat">#</a>
+		<code><a href="source-class-Laravel.Routing.Router.html#549" title="Go to source code">repeat</a>( <span>string <var>$pattern</var></span>, <span>integer <var>$times</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get a string repeating a URI pattern any number of times.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get a string repeating a URI pattern any number of times.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pattern</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$times</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="names" id="$names">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Router.html#10" title="Go to source code"><var>$names</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$names" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The route names that have been matched.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The route names that have been matched.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="uses" id="$uses">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Router.html#17" title="Go to source code"><var>$uses</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$uses" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The actions that have been reverse routed.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The actions that have been reverse routed.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="routes" id="$routes">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Router.html#24" title="Go to source code"><var>$routes</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$routes" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All of the routes that have been registered.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All of the routes that have been registered.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="fallback" id="$fallback">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Router.html#31" title="Go to source code"><var>$fallback</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$fallback" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>All of the "fallback" routes that have been registered.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>All of the "fallback" routes that have been registered.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="group" id="$group">
+
+		<td class="attributes"><code>
+			
+			public static
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Router.html#38" title="Go to source code"><var>$group</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$group" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The current attributes being shared by routes.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The current attributes being shared by routes.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="bundle" id="$bundle">
+
+		<td class="attributes"><code>
+			
+			public static
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Router.html#43" title="Go to source code"><var>$bundle</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$bundle" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The "handes" clause for the bundle currently being routed.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The "handes" clause for the bundle currently being routed.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="segments" id="$segments">
+
+		<td class="attributes"><code>
+			
+			public static
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Router.html#50" title="Go to source code"><var>$segments</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">5</span></code></td>
+		<td class="description"><div>
+			<a href="#$segments" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The number of URI segments allowed as method arguments.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The number of URI segments allowed as method arguments.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="patterns" id="$patterns">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Router.html#57" title="Go to source code"><var>$patterns</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+	<span class="php-quote">'(:num)'</span> =&gt; <span class="php-quote">'([0-9]+)'</span>,
+	<span class="php-quote">'(:any)'</span> =&gt; <span class="php-quote">'([a-zA-Z0-9\.\-_%]+)'</span>,
+	<span class="php-quote">'(:all)'</span> =&gt; <span class="php-quote">'(.*)'</span>,
+)</code></td>
+		<td class="description"><div>
+			<a href="#$patterns" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The wildcard patterns supported by the router.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The wildcard patterns supported by the router.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="optional" id="$optional">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Router.html#68" title="Go to source code"><var>$optional</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+	<span class="php-quote">'/(:num?)'</span> =&gt; <span class="php-quote">'(?:/([0-9]+)'</span>,
+	<span class="php-quote">'/(:any?)'</span> =&gt; <span class="php-quote">'(?:/([a-zA-Z0-9\.\-_%]+)'</span>,
+	<span class="php-quote">'/(:all?)'</span> =&gt; <span class="php-quote">'(?:/(.*)'</span>,
+)</code></td>
+		<td class="description"><div>
+			<a href="#$optional" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The optional wildcard patterns supported by the router.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The optional wildcard patterns supported by the router.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="methods" id="$methods">
+
+		<td class="attributes"><code>
+			
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravel.Routing.Router.html#79" title="Go to source code"><var>$methods</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">'GET'</span>, <span class="php-quote">'POST'</span>, <span class="php-quote">'PUT'</span>, <span class="php-quote">'DELETE'</span>)</code></td>
+		<td class="description"><div>
+			<a href="#$methods" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>An array of HTTP request methods.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>An array of HTTP request methods.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<ul class="span7">
+				<li><a href="http://beta.laravel.com/">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="http://forums.laravel.com">Forums</a></li>
+				<li><a href="http://bundles.laravel.com">Bundles</a></li>
+				<li><a href="http://laravel.com/docs">Learn</a></li>
+				<li class="download">
+					<a href="http://laravel.com/download">Download <i class="download"></i></a>
+				</li>
+			</ul>
+			<ul class="social span3 offset2">
+				<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
+				<li><a href="http://twitter.com/laravelphp"><i class="twitter"></i> Twitter</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
