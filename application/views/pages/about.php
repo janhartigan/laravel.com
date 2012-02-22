@@ -45,7 +45,7 @@
 
 				<h2>Laravel's License</h2>
 
-				<p>Larave is open-sourced software licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>.</p>
+				<p>Laravel is open-sourced software licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>.</p>
 			</div>
 
 		</div>
