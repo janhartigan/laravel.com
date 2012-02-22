@@ -14,7 +14,7 @@
 		<link rel="shortcut icon" href="<?php echo URL::to_asset('img/favicon.png'); ?>">
 
 		<!-- styles -->
-		<link href="<?php echo URL::to_asset('css/style.css') ?>" rel="stylesheet" type="text/css">
+		<link href="<?php echo URL::to_asset('css/style.css') ?>?3" rel="stylesheet" type="text/css">
 
 		<!-- Js for fonts and tracking -->
 		<script type="text/javascript" src="http://use.typekit.com/dlj4kfm.js"></script>
