@@ -2872,6 +2872,9 @@ header ul.nav.pull-right {
   position: relative;
   display: block;
 }
+header .navbar {
+  text-transform: uppercase;
+}
 header .navbar .nav li.download {
   margin: 2px 0 0 3px;
 }

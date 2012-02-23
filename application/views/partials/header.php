@@ -44,20 +44,26 @@
 
 							<div class="nav-collapse">
 								<ul class="nav pull-right">
-									<li><a href="<?php echo URL::to(); ?>">HOME</a></li>
+									<li><a href="<?php echo url(); ?>">HOME</a></li>
 									<li><a href="<?php echo url('about'); ?>">ABOUT</a></li>
-									<li><a href="http://forums.laravel.com">FORUMS</a></li>
 									<li><a href="http://bundles.laravel.com">BUNDLES</a></li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">LEARN <b class="caret"></b></a>
 										<ul class="dropdown-menu">
-											<li><a href="<?php echo URL::to('docs'); ?>">DOCUMENTATION</a></li>
+											<li><a href="<?php echo url('docs'); ?>">DOCUMENTATION</a></li>
 											<li><a href="http://screenr.com/user/laravel">SCREENCASTS</a></li>
 											<li class="divider"></li>
-											<li><a href="http://laravel.com/api">DEVELOPER API</a></li>
+											<li><a href="<?php echo url('api'); ?>">DEVELOPER API</a></li>
 										</ul>
 									</li>
-									<li class="download"><a href="http://laravel.com/download">DOWNLOAD</a></li>
+									<li class="dropdown">
+										<a href="<?php echo url('forums') ?>" class="dropdown-toggle" data-toggle="dropdown">COMMUNITY <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="http://forums.laravel.com">FORUMS</a></li>
+											<li><a href="<?php echo url('irc') ?>">IRC</a></li>
+										</ul>
+									</li>
+									<li class="download"><a href="<?php echo url('download') ?>">DOWNLOAD</a></li>
 								</ul>
 							</div><!-- /.nav-collapse -->
 						</div>

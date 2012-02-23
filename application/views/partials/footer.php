@@ -3,14 +3,12 @@
 			<div class="container">
 				<div class="row">
 					<ul class="span7">
-						<li><a href="<?php echo URL::to(); ?>">Home</a></li>
+						<li><a href="<?php echo url(); ?>">Home</a></li>
 						<li><a href="<?php echo url('about'); ?>">About</a></li>
 						<li><a href="http://forums.laravel.com">Forums</a></li>
 						<li><a href="http://bundles.laravel.com">Bundles</a></li>
-						<li><a href="http://laravel.com/docs">Learn</a></li>
-						<li class="download">
-							<a href="http://laravel.com/download">Download <i class="download"></i></a>
-						</li>
+						<li><a href="<?php echo url('docs') ?>">Learn</a></li>
+						<li class="download"><a href="<?php echo url('download') ?>">Download <i class="download"></i></a></li>
 					</ul>
 					<ul class="social span3 offset2">
 						<li><a href="http://github.com/laravel"><i class="github"></i> GitHub</a></li>
