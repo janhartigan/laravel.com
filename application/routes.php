@@ -69,6 +69,13 @@ Route::get('(3)', function()
 		->nest('footer', 'partials.footer');
 });
 
+Route::get('irc', function()
+{
+	return View::make('pages.irc')
+		->nest('header', 'partials.header', array('title' => 'Laravel IRC', 'body_class' => 'irc'))
+		->nest('footer', 'partials.footer');
+});
+
 Route::get('docs/(:any?)/(:any?)', 'docs@index');
 
 /*
