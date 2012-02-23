@@ -7,7 +7,12 @@
  * @author   Taylor Otwell <taylorotwell@gmail.com>
  * @link     http://laravel.com
  */
-if(!isset($_SERVER['LARAVEL_ENV'])){
+
+// --------------------------------------------------------------
+// Setup environment paths
+// --------------------------------------------------------------
+if ( ! isset($_SERVER['LARAVEL_ENV']))
+{
 	$host = $_SERVER['HTTP_HOST'];
 	if (strpos($host, 'localhost') !== FALSE)
 	{
@@ -18,6 +23,7 @@ if(!isset($_SERVER['LARAVEL_ENV'])){
 		$_SERVER['LARAVEL_ENV'] = 'production';
 	}
 }
+
 // --------------------------------------------------------------
 // Initialize the web variable if it doesn't exist.
 // --------------------------------------------------------------
