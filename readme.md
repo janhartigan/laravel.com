@@ -1,1 +1,1 @@
-Coming Soon!
+The website for [Laravel.com](http://laravel.com)
