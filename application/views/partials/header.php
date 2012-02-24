@@ -44,26 +44,26 @@
 
 							<div class="nav-collapse">
 								<ul class="nav pull-right">
-									<li><a href="<?php echo url(); ?>">HOME</a></li>
-									<li><a href="<?php echo url('about'); ?>">ABOUT</a></li>
-									<li><a href="http://bundles.laravel.com">BUNDLES</a></li>
+									<li><a href="<?php echo url(); ?>">Home</a></li>
+									<li><a href="<?php echo url('about'); ?>">About</a></li>
+									<li><a href="http://bundles.laravel.com">Bundles</a></li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">LEARN <b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
 										<ul class="dropdown-menu">
-											<li><a href="<?php echo url('docs'); ?>">DOCUMENTATION</a></li>
-											<li><a href="http://screenr.com/user/laravel">SCREENCASTS</a></li>
+											<li><a href="<?php echo url('docs'); ?>">Documentation</a></li>
+											<li><a href="http://screenr.com/user/laravel">Screencasts</a></li>
 											<li class="divider"></li>
-											<li><a href="<?php echo url('api'); ?>">DEVELOPER API</a></li>
+											<li><a href="<?php echo url('api'); ?>">Developer API</a></li>
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a href="<?php echo url('forums') ?>" class="dropdown-toggle" data-toggle="dropdown">COMMUNITY <b class="caret"></b></a>
+										<a href="<?php echo url('forums') ?>" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
 										<ul class="dropdown-menu">
-											<li><a href="http://forums.laravel.com">FORUMS</a></li>
+											<li><a href="http://forums.laravel.com">Forums</a></li>
 											<li><a href="<?php echo url('irc') ?>">IRC</a></li>
 										</ul>
 									</li>
-									<li class="download"><a href="<?php echo url('download') ?>">DOWNLOAD</a></li>
+									<li class="download"><a href="<?php echo url('download') ?>">Download</a></li>
 								</ul>
 							</div><!-- /.nav-collapse -->
 						</div>
