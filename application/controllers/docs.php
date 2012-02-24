@@ -30,7 +30,13 @@ class Docs_Controller extends Base_Controller {
 		$sidebar = str_replace('<br />', '', $sidebar);
 
 		// Make the title
-		$title = Docs::title($content).'Laravel Documentation';
+		$title = Docs::title($content).' - Laravel Documentation';
+
+		// Make it work locally
+		if ($_SERVER['LARAVEL_ENV'] == 'local')
+		{
+			$sidebar = str_replace('/docs', URL::to().'docs', $sidebar);
+		}
 
 		return $this->layout->with('title', $title)
 			->with('sidebar', $sidebar)

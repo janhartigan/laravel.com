@@ -26,7 +26,7 @@ class Docs {
 	{
 		if ($title = static::text_between_tag($content))
 		{
-			return $title[0]. ' - ';
+			return $title[0];
 		}
 		return null;
 	}
@@ -58,42 +58,36 @@ class Docs {
 	 */
 	public static function content($section = null, $page = null)
 	{
-		$markdown_file = !empty($section) && !empty($page)
-			?$section . DS . $page
-			:(
-				!empty($section)
-					?$section
-					:(
-						!empty($page)?$page:"home"
-					)
-			);
-
-		$markdown_path = path("storage") . DS . "docs" . DS . $markdown_file . ".md";
-
-		if(!is_file($markdown_path))
+		if ( ! $section)
 		{
-			return null;
+			$markdown_file = 'docs/home';
+		}
+		else
+		{
+			$file = 'docs/'.$section.'/'.$page;
+			$markdown_file = rtrim($file, '/');
 		}
 
-		$cache_key = str_replace(DS,'_',"docs" . DS . $markdown_file);
-
-		$cached_data = Cache::get($cache_key);
-		clearstatcache(); // php caches file stat data such as mtime, so we need to reset it
-
-		$refresh_cache = is_null($cached_data)
-					|| !is_array($cached_data)
-					|| !array_key_exists('mtime', $cached_data)
-					|| !array_key_exists('content', $cached_data)
-					|| !is_int($cached_data['mtime'])
-					|| (filemtime($markdown_path) != $cached_data['mtime']);
-
-		if($refresh_cache){
-			$cached_data = array();
-			$cached_data['content'] = MarkdownExtended(File::get($markdown_path));
-			$cached_data['content'] = str_replace('/docs', URL::to('docs'), $cached_data['content']);
-			$cached_data['mtime'] = filemtime($markdown_path);
-			Cache::put($cache_key,$cached_data,60*24*365); // cache the content for 1 year
+		if ($contents = Cache::get(str_replace('/', '_', $markdown_file)))
+		{
+			return $contents;
 		}
-		return $cached_data['content'];
+
+		if ( ! is_file(path('storage').$markdown_file.'.md'))
+		{
+			// Check for a home file
+			if (is_file(path('storage').$markdown_file.'/home.md'))
+			{
+				$markdown_file .= '/home';
+			}
+			else
+			{
+				return null;
+			}
+		}
+
+		$contents = MarkdownExtended(File::get(path('storage').$markdown_file.'.md'));
+		Cache::put(str_replace('/', '_', $markdown_file), $contents, 60);
+		return $contents;
 	}
 }
