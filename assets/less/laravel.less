@@ -219,6 +219,9 @@ header {
 	h3 {
 		margin: 20px 0 10px;
 	}
+	h4 {
+		margin: 0 0 10px 0;
+	}
 	.well blockquote {
 		background-color: #FFEBE8;
 		padding: 10px;
@@ -229,7 +232,11 @@ header {
 	}
 	table {
 		width: 100%;
-
+		margin-bottom: 20px;
+		th {
+			font-family: @sansFont;
+			text-rendering: optimizelegibility; // Fix the character spacing for headings
+		}
 		tr:nth-child(odd) td {
 			background-color: #f9f9f9;
 		}
@@ -237,15 +244,15 @@ header {
 			padding: 5px;
 			border-top: 1px solid #fff;
 			background-color: #fff;
-			width: 50%;
+
 		}
 
 		.table-bordered;
 		code {
 			padding: 0 3px 2px;
 			font-family: Menlo, Monaco, "Courier New", monospace;
-			font-size: 11px;
-			color: #333;
+			font-size: 12px;
+			color: #336699;
 			border-radius: none;
 			border: none;
 			background: transparent;

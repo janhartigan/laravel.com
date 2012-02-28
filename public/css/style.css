@@ -2830,6 +2830,9 @@ header .dropdown-menu li {
 .content.docs h3 {
   margin: 20px 0 10px;
 }
+.content.docs h4 {
+  margin: 0 0 10px 0;
+}
 .content.docs .well blockquote {
   background-color: #FFEBE8;
   padding: 10px;
@@ -2844,12 +2847,17 @@ header .dropdown-menu li {
 }
 .content.docs table {
   width: 100%;
+  margin-bottom: 20px;
   border: 1px solid #ddd;
   border-collapse: separate;
   *border-collapse: collapsed;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+}
+.content.docs table th {
+  font-family: "proxima-nova", sans-serif;
+  text-rendering: optimizelegibility;
 }
 .content.docs table tr:nth-child(odd) td {
   background-color: #f9f9f9;
@@ -2858,7 +2866,6 @@ header .dropdown-menu li {
   padding: 5px;
   border-top: 1px solid #fff;
   background-color: #fff;
-  width: 50%;
 }
 .content.docs table th + th,
 .content.docs table td + td,
@@ -2892,8 +2899,8 @@ header .dropdown-menu li {
 .content.docs table code {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 11px;
-  color: #333;
+  font-size: 12px;
+  color: #336699;
   border-radius: none;
   border: none;
   background: transparent;
