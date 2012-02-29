@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,7 +8,7 @@
 		<meta name="keywords" content="php framework, framework, restful routing, restful, clean php">
 		<meta name="robots" content="index,follow">
 		<meta name="application-name" content="Laravel">
-		<link rel="author" href="humans.txt">
+		<link rel="author" href="/humans.txt">
 		<link rel="dns-prefetch" href="//ajax.googleapis.com">
 		<link rel="shortcut icon" href="<?php echo URL::to_asset('img/favicon.png'); ?>">
 
