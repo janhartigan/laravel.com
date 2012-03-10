@@ -7,6 +7,9 @@
 					<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="laravel.com/docs/">
 					<input type="search" results="5" name="q" id="q" autosave="laraveldocs" placeholder="Search the documentation">
 				</form>
+				<ul class="toc">
+					<li><a href="/docs/toc">Table of Contents</a></li>
+				</ul>
 			</div>
 			<div class="content docs span9">
 				<div class="well">

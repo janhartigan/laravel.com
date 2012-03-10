@@ -204,7 +204,7 @@ $(document).ready(function() {
 	$().UItoTop({ easingType: 'easeOutQuart' });
 	if ($('#docs-sidebar').length ) {
 		$.get('/docs/sidebar', function(data) {
-			$('.sidebar').append(data);
+			$('.sidebar ul.toc').before(data);
 			var url = document.location.href;
 			var parent_folder = url.substr(0, url.lastIndexOf('/'));
 			var active = url.substr(0, url.length-document.location.hash.length);
@@ -229,7 +229,5 @@ $(document).ready(function() {
 				});
 			});
 		});
-	}
-
-
+	} // end if
 });

@@ -45,6 +45,17 @@ class Docs_Controller extends Base_Controller {
 			->with('content', $content);
 	}
 
+	public function action_toc()
+	{
+		$content = Docs::content('contents');
+		$content = str_replace('<br />', '', $content);
+		$content = '<h1>Table of Contents</h1>'.$content;
+		return $this->layout->with('title', 'Table of Contents')
+			->with('sidebar', $content)
+			->with('section', 'toc')
+			->with('content', $content);
+	}
+
 	public function action_sidebar()
 	{
 		$sidebar = Docs::content('contents');
