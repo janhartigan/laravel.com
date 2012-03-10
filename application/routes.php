@@ -77,6 +77,7 @@ Route::get('irc', function()
 });
 
 Route::get('docs/(:any?)/(:any?)', 'docs@index');
+Route::get('docs/sidebar', 'docs@sidebar');
 
 /*
 |--------------------------------------------------------------------------

@@ -44,4 +44,20 @@ class Docs_Controller extends Base_Controller {
 			->with('page', $page)
 			->with('content', $content);
 	}
+
+	public function action_sidebar()
+	{
+		$sidebar = Docs::content('contents');
+
+		// For some reason the list is getting br tags.
+		$sidebar = str_replace('<br />', '', $sidebar);
+
+		// Make it work locally
+		if ($_SERVER['LARAVEL_ENV'] == 'local')
+		{
+			$sidebar = str_replace('/docs', URL::to().'docs', $sidebar);
+		}
+
+		return $sidebar;
+	}
 }
