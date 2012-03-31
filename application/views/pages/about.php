@@ -43,6 +43,7 @@
 						</div>
 					</div>
 
+					<a name="donations"></a>
 					<h2>Donations</h2>
 
 					<p>Donations may be sent via PayPal to <?php echo HTML::email('taylorotwell@gmail.com'); ?>.</p>

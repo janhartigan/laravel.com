@@ -45,6 +45,7 @@
 								<ul class="nav pull-right">
 									<li><a href="<?php echo url(); ?>">Home</a></li>
 									<li><a href="<?php echo url('about'); ?>">About</a></li>
+									<li><a href="<?php echo url('about#donations'); ?>">Donate</a></li>
 									<li><a href="http://bundles.laravel.com">Bundles</a></li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
