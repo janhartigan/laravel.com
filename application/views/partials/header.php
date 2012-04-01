@@ -48,7 +48,7 @@
 									<li><a href="<?php echo url('about#donations'); ?>">Donate</a></li>
 									<li><a href="http://bundles.laravel.com">Bundles</a></li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
+										<a href="<?php echo url('docs'); ?>" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
 										<ul class="dropdown-menu">
 											<li><a href="<?php echo url('docs'); ?>">Documentation</a></li>
 											<li><a href="http://screenr.com/user/laravel">Screencasts</a></li>
@@ -57,7 +57,7 @@
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a href="<?php echo url('forums') ?>" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+										<a href="http://forums.laravel.com" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
 										<ul class="dropdown-menu">
 											<li><a href="http://forums.laravel.com">Forums</a></li>
 											<li><a href="<?php echo url('irc') ?>">IRC</a></li>
