@@ -206,31 +206,6 @@ $(document).ready(function() {
 		$.get('/docs/sidebar', function(data) {
 			$('.sidebar ul.toc').before(data);
 			$('.sidebar ul.toc').hide();
-			var url = document.location.href;
-			// console.log(url);
-			var parent_folder = url.substr(0, url.lastIndexOf('/'));
-			var active = url.substr(0, url.length-document.location.hash.length);
-
-			$('.docs.sidebar ul ul').hide();
-			$('.docs.sidebar ul ul').each(function() {
-				$(this).parent('li').addClass('nav-close');
-				var anchor = $(this).prev('a').attr('href');
-				if (anchor == active.replace('http://laravel.com', '')) {
-					$(this).prev('a').addClass('active');
-					$(this).parent('li').addClass('nav-open').removeClass('nav-close');
-					$(this).show();
-				} else if (anchor == parent_folder.replace('http://laravel.com', '')) {
-					$(this).prev('a').addClass('active');
-					$(this).parent('li').addClass('nav-open').removeClass('nav-close');
-					$(this).show();
-				}
-				//console.log(anchor+' == '+parent_folder);
-				$(this).prev('a').bind('click', function(e) {
-					$(this).parent('li').toggleClass('nav-open').toggleClass('nav-close');
-					$(this).next('ul').animate({opacity: 'toggle', height: 'toggle'}, "slow");
-					return false;
-				});
-			});
 		});
 	} // end if
 });
