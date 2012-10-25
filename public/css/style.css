@@ -3163,6 +3163,9 @@ i.twitter {
   border-radius: 10px;
   line-height: 12px;
 }
+.sidebar form input[type="search"] {
+  line-height: 24px;
+}
 .sidebar form:-moz-placeholder {
   color: #afb2b2;
 }
